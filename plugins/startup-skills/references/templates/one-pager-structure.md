@@ -46,7 +46,7 @@ NOT "The future of X." NOT "Reimagining Y." Direct and specific.
 
 ### Problem
 
-The first paragraph should land the reader in the customer's situation. Use customer vocabulary from `references/research-playbook.md` and `market-intel`. Pull a verbatim quote if you have one strong enough.
+The first paragraph should land the reader in the customer's situation. Use customer vocabulary from `${CLAUDE_PLUGIN_ROOT}/references/composed/research-playbook.md` and `market-intel`. Pull a verbatim quote if you have one strong enough.
 
 NOT: "The world is changing." Specific or omit.
 

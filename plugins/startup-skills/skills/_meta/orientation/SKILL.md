@@ -47,7 +47,7 @@ This skill is the *only* skill that creates `STARTUP-STATE.md` from scratch. Def
 
 ## Process
 
-1. **Check for existing state.** Read `.claude/startup-state.md` (or `STARTUP_STATE_PATH`). If it exists, skim the Founder Profile, Current Hypothesis, and last Session Log entry. Open with: "Looks like we've talked before. Picking up from where we left off — you were [last activity]. Continue, or reorient?"
+1. **Check for existing state.** Read `.claude/startup-state.md` (or `STARTUP_STATE_PATH`). If it exists, skim the Founder Profile, Current Hypothesis, `# Inferred Stage`, `# Session Pointers`, and last Session Log entry. Session Pointers are the freshest routing signal — they tell you what the last skill said should happen next. Open with: "Looks like we've talked before. Picking up from where we left off — you were [last activity], pointers say [next move]. Continue, or reorient?"
 2. **Three-sentence system intro** (no marketing). Use roughly: "Startup Skills is the Aggressive Epistemic Auditor for founders — direct, evidence-driven, willing to tell you hard things. The human does what only humans can: build relationships, make sales calls, commit. I do what only I can: read the internet, run the bias checks, never tire of pushing back. Everything we decide lives in a shared state document so we don't repeat ourselves."
 3. **Single orientation question, five options.** Ask:
 
@@ -67,7 +67,7 @@ This skill is the *only* skill that creates `STARTUP-STATE.md` from scratch. Def
    - Option 4 (Built something, need first customers) → `founder-context` then `outreach-engine` → [50-100 prospect list, YC-style outreach, funnel math backwards from goal]
    - Option 5 (Customers but stalled) → `signal-audit` then `pivot-decision` → [reads entire state, applies Klein pre-mortem + Dalton opportunity cost, 3-5 scored pivot candidates]
 6. **Tell the user how to invoke the next skill explicitly.** "Type `/skill founder-context` to start, or just describe what you want next — I'll route to it."
-7. **Append Session Log entry.** One line with date, skill name, and the routing decision.
+7. **Write Session Pointers + Session Log.** Append a Session Pointer for the recommended next skill (e.g., `- run founder-context to fill profile, then idea-genesis`). Append one Session Log line with date, skill name, and the routing decision. If Session Pointers now exceeds 5 entries, drop the oldest.
 
 ## Outputs
 

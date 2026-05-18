@@ -19,7 +19,7 @@ That's the whole page. Mobile-first. Tailwind or equivalent for styling. No caro
 
 - **Specific over clever.** "Schedule patient appointments without insurance pre-auth hell" beats "The future of healthcare scheduling."
 - **Direct second-person.** "You hire engineers; we screen them." beats "We are revolutionizing technical hiring."
-- **Lead with the customer's pain in their own words** (from `references/research-playbook.md` vocabulary capture). Verbatim language is the difference between a 1% conversion and a 5%.
+- **Lead with the customer's pain in their own words** (from `${CLAUDE_PLUGIN_ROOT}/references/composed/research-playbook.md` vocabulary capture). Verbatim language is the difference between a 1% conversion and a 5%.
 
 ## Single-CTA discipline
 

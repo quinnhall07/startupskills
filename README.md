@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-0.6.0-blue)
+![Version](https://img.shields.io/badge/version-0.6.1-blue)
 [![License](https://img.shields.io/badge/license-PolyForm_Noncommercial-orange)](./LICENSE)
 ![Skills](https://img.shields.io/badge/skills-21%20%2B%202%20system-green)
 ![References](https://img.shields.io/badge/references-33-green)

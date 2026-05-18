@@ -123,6 +123,4 @@ If all three are "no" → force a contrarian pass. State it out loud:
 
 ## Where this is used
 
-Loaded as the enforcement-override library by `bias-sentinel.md`, and consumed directly by `pivot-decision`, `pmf-audit`, `mvp-architect`, `signal-audit`, and the planned `founder-resilience` skill. Where `bias-sentinel.md` names biases as they appear, this file is the set of pre-committed structures that prevent the biases from steering the decision in the first place.
-
-WROTE: /Users/hunter/Documents/GitHub/startup-skills/plugins/startup-skills/references/decision-journal-template.md (128 lines)
+Loaded as the enforcement-override library by `bias-sentinel.md`, and consumed directly by `pivot-decision`, `pmf-audit`, `mvp-architect`, `signal-audit`, and `founder-resilience`. Where `bias-sentinel.md` names biases as they appear, this file is the set of pre-committed structures that prevent the biases from steering the decision in the first place.

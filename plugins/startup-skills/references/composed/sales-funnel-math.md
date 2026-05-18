@@ -58,7 +58,7 @@ These are reality, not the optimistic numbers founders hope for. The 3–5% cold
 
 **Bottom line**: if you're not authenticated (SPF + DKIM + DMARC) and warming up secondary domains, your math is broken before you write the first email.
 
-For deliverability infrastructure, load `${CLAUDE_PLUGIN_ROOT}/references/tool-recommendations.md` cold email section.
+For deliverability infrastructure, load `${CLAUDE_PLUGIN_ROOT}/references/composed/tool-recommendations.md` cold email section.
 
 ## LinkedIn comment-first math (2025-2026)
 

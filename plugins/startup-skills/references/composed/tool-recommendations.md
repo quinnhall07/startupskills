@@ -97,7 +97,7 @@ Tool-agnostic recommendations for pre-PMF founders. The pattern: start with the 
 | **Replit Agent** | Autonomous long-running prototypes. $25/mo subscription BUT **pricing is unpredictable** — set hard budget cap (some founders report $600+ burns in days). | Cost-sensitive founders. |
 | **v0** | Falling behind 2025-2026; not recommended for production. | Default skip. |
 
-**Recommendation by MVP shape** (cross-reference `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` vibe-vs-craft gate):
+**Recommendation by MVP shape** (cross-reference `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` vibe-vs-craft gate):
 - Landing/Fake Door: Carrd, Framer, or Lovable.
 - Internal-tool prototype: Replit Agent or Lovable.
 - Consumer mobile MVP: Cursor + Expo (production); Lovable for landing.
@@ -122,7 +122,7 @@ Post-Feb 2024 Gmail/Yahoo bulk-sender rules + Nov 2025 enforcement, cold email r
 
 **Reply rate benchmarks** (custom domain + Outlook): 5.9% strong; Gmail: 3.5% strong; webmail: 1.2-2.1% strong.
 
-For full deliverability protocol, load `${CLAUDE_PLUGIN_ROOT}/references/distribution-by-archetype.md`.
+For full deliverability protocol, load `${CLAUDE_PLUGIN_ROOT}/references/composed/distribution-by-archetype.md`.
 
 ## LinkedIn outbound (2025-2026)
 

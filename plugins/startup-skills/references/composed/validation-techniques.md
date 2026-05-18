@@ -90,7 +90,7 @@ A landing page or simple UI built with Lovable/Bolt/v0 that demonstrates the pro
 - **Signal weight**: 0.5 base (active engagement with the UI exceeds Fake Door email signal). Increase to 0.7 if the user completes the core flow (e.g., uploads a file, sees a result). Increase to 0.8-1.0 if they pay during/after the demo.
 - **Time to deploy**: hours to 1 day for Lovable / Bolt.
 - **When NOT to use**:
-  - **Regulated / payments / auth surfaces** — vibe-code bans apply (per `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md`). Use Concierge instead.
+  - **Regulated / payments / auth surfaces** — vibe-code bans apply (per `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md`). Use Concierge instead.
   - When the product hypothesis is the workflow itself — Concierge tests workflow better than UI.
   - Past 3-5 components — Bolt/Lovable code quality degrades.
 

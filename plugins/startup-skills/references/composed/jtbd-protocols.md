@@ -127,5 +127,3 @@ A fragile PMF that scales becomes an expensive PMF that churns. Diagnose with th
 - `outreach-engine` — the four forces dictate cold-email subject lines and opening paragraphs (lead with the **push** the prospect is feeling today, not the **pull** of your product).
 
 Re-read Moesta's *Demand-Side Sales* and Klement's *When Coffee and Kale Compete* before any major positioning rewrite. The discipline of reconstructing a real timeline — not a hypothetical persona — is the entire point.
-
-WROTE: /Users/hunter/Documents/GitHub/startup-skills/plugins/startup-skills/references/jtbd-protocols.md (131 lines)

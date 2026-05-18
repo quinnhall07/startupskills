@@ -75,7 +75,7 @@ Founders must price *value* not *cost*, but must instrument *cost per request* o
 ### Outcome-pricing formula (Sierra pattern)
 Charge **10-30% of human-replaced cost**. Define an outcome contract (e.g. "resolved" = customer confirms or no reopen in 7 days). Refund on failure. See [Sierra: outcome-based pricing for AI agents](https://sierra.ai/blog/outcome-based-pricing-for-ai-agents).
 
-For full AI-era anti-patterns including token-cost denial trap, load `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md`.
+For full AI-era anti-patterns including token-cost denial trap, load `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md`.
 
 ## Boundary conditions for "charge from day one"
 
@@ -114,7 +114,7 @@ Discount **scope** or **term length**, never **list price**. Each 20% discount r
 - **Value-based price** = 10-25% of customer's quantified gain (cost saved + revenue added).
 - **AI outcome price** = (human-cost-replaced) × 0.10 to 0.30.
 - **First-customer price** = whatever they'll sign for **minus 0%**. Raise on customer #6.
-- **Path to $1M ARR**: $1M / (price × 12) = customers needed. Cross-reference `${CLAUDE_PLUGIN_ROOT}/references/sales-funnel-math.md`.
+- **Path to $1M ARR**: $1M / (price × 12) = customers needed. Cross-reference `${CLAUDE_PLUGIN_ROOT}/references/composed/sales-funnel-math.md`.
 
 ## Revenue models by archetype
 
@@ -147,7 +147,7 @@ This sets the floor on pricing. Working backwards:
 
 The 9-customer enterprise path is dramatically easier than the 833-customer B2C path, even though the dollar target is identical. Underpricing locks the founder into the harder path; correctly-pricing opens the easier one.
 
-Cross-reference: `references/sales-funnel-math.md` for the conversion rates that determine how many conversations each path requires.
+Cross-reference: `${CLAUDE_PLUGIN_ROOT}/references/composed/sales-funnel-math.md` for the conversion rates that determine how many conversations each path requires.
 
 ## Free trial vs money-back guarantee — when each fits
 

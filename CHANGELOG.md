@@ -2,6 +2,16 @@
 
 All notable changes to Startup Skills are documented here. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [0.6.1] — 2026-05-18
+
+### Fixed — post-merge hygiene
+
+- Added the `## Inferred Stage` and `## Session Pointers` sections to `references/templates/state-document-template.md` (Task 2 of the foundation plan claimed to add them but the file shipped without). The architecture spec's skill-graph routing layer depends on both sections.
+- Updated `orientation` to read Session Pointers as the freshest routing signal and to write one Pointer on completion (capped at 5, oldest drops).
+- Cleaned 7 stale cross-references inside `references/` that still pointed at the pre-migration flat path (`references/foo.md`) — updated to the layered path (`references/composed/foo.md` or `references/templates/foo.md`). Skill files were already migrated; this catches the references-citing-references cases the migration missed.
+- Removed two accidentally-committed debug lines (local maintainer paths) from `decision-journal-template.md` and `jtbd-protocols.md`.
+- Removed forward-reference debt that the v0.6.0 ship inherited from v0.1 ("ships in v0.2", "until then") in `state-document-template.md`, `state-document-protocol.md`, and `bias-sentinel.md`. CONTRIBUTING.md forbids forward-reference debt; the referenced files now exist.
+
 ## [0.6.0] — 2026-05-18
 
 ### Architecture — knowledge graph system

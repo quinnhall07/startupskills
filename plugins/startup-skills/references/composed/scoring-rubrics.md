@@ -51,7 +51,7 @@ What does the evidence so far actually say?
 After scoring all four dimensions:
 
 - **FMF ≥ 7 AND ≥ 2 other dimensions ≥ 7** → "Worth pursuing. Name the single largest gap and a specific test to close it."
-- **Tar pit detected** (per `references/tar-pit-detection.md`) → "Tar pit. Here is why specifically. Move on."
+- **Tar pit detected** (per `${CLAUDE_PLUGIN_ROOT}/references/composed/tar-pit-detection.md`) → "Tar pit. Here is why specifically. Move on."
 - **FMF < 5** → "No founder-market fit. Find a cofounder who has it, or change ideas. The system won't help you continue here without an FMF plan."
 - **Otherwise** → "Mixed. Here are 2–3 things we'd need to learn next to make this clear. Do this before any building."
 

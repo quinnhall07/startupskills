@@ -44,7 +44,7 @@ _Schema version: 2.0_
 | # | Date | Source | Quote/Observation | Type | Weight | Notes |
 |---|------|--------|-------------------|------|--------|-------|
 
-(Weight is from the Evidence Weighting Matrix in `references/evidence-weighting-matrix.md` — ships in v0.2 — running 0.0 attitudinal weak → 1.0 behavioral absolute. Until that reference exists, log `Weight` as a plain number and update once available.)
+(Weight is from the Evidence Weighting Matrix in `references/composed/evidence-weighting-matrix.md` — 0.0 attitudinal weak → 1.0 behavioral absolute.)
 
 ## PMF Running Score
 - Sample size: [N targeted conversations]
@@ -153,6 +153,27 @@ _Schema version: 2.0_
 | Topic | Last researched | Source skill | Brief location |
 |-------|-----------------|--------------|----------------|
 
+## Inferred Stage
+
+(Auto-derived hint, written by skills as they complete; read by `orientation`
+to filter candidate skills. One of: `idea-genesis`, `problem-validation`,
+`discovery`, `mvp-scoping`, `first-customers`, `pmf-measurement`,
+`at-pmf-threshold`, `ready-to-scale`, `growth`, `scaling`, `fundraising-prep`,
+`pivot-evaluation`. Stage vocabulary defined in the architecture spec.)
+
+Current: [unset until first skill writes]
+History:
+- [date] [skill] — set to [stage] because [reason]
+
+## Session Pointers
+
+(Forward-looking nudges written by skills when they finish. `orientation`
+reads these first when selecting the next skill. Keep the 5 most recent —
+append on write, drop the oldest when count exceeds 5. Action items go
+stale fast; the audit trail belongs in `## Session Log`.)
+
+- (none yet)
+
 ## Session Log
 - [date] [skill] — [one-sentence summary, decisions made, evidence added]
 ```
@@ -164,8 +185,8 @@ _Schema version: 2.0_
 - **One-Liner.** Versioned because the founder's positioning will mutate — preserve the history.
 - **Evidence Log.** Append-only. Never edit prior entries. If a quote turns out to be misclassified, add a new row with the corrected weight and a Notes pointer to the original.
 - **Session Log.** One line per skill invocation. Date, skill name, one-sentence summary. Keeps the audit trail without bloating the doc.
-- **Forward references.** Some sections cite references that ship in later versions of Startup Skills. Skills shipping in v0.1 must not block on those — log what they can, leave fields blank until the relevant reference and skill exist.
-- **Schema v2 (2026-05-13)**: added AI Economics, Retention Cohorts, Positioning, Opportunity Solution Tree, Decision Journal, Kill Criteria Registry, Sycophancy Check, Research Cache. Migration: existing v1 state docs are forward-compatible; new sections are populated by new skills as they fire. No data loss.
+- **Session Pointers vs Session Log.** Pointers are the live working set (max 5, drop the oldest); the Log is the full audit trail. A skill always writes both: 1-3 pointers for what should happen next, one Log line for what just happened.
+- **Schema v2 (2026-05-13)**: added AI Economics, Retention Cohorts, Positioning, Opportunity Solution Tree, Decision Journal, Kill Criteria Registry, Sycophancy Check, Research Cache. Inferred Stage and Session Pointers added 2026-05-18 alongside the knowledge-graph routing layer.
 
 ## Migration from v1.0 to v2.0
 

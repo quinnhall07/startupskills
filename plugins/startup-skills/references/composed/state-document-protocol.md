@@ -12,7 +12,7 @@ Every Startup Skills skill reads and writes `STARTUP-STATE.md` using the protoco
 
 1. Read `STARTUP-STATE.md` (default path or `STARTUP_STATE_PATH`).
 2. If the file does not exist:
-   - If the current skill is `orientation`, create it from `references/state-document-template.md`.
+   - If the current skill is `orientation`, create it from `references/templates/state-document-template.md`.
    - Otherwise, stop and hand off: "No state document found. Run `orientation` first so we have a shared anchor."
 3. Skim the document fully before responding. Build context from the founder profile, current hypothesis, evidence log, and recent Session Log entries.
 
@@ -26,11 +26,7 @@ Every Startup Skills skill reads and writes `STARTUP-STATE.md` using the protoco
 
 ## Concurrency
 
-Startup Skills assumes a single Claude session per state file at a time. If a user opens two Claude conversations against the same project, the last writer wins. Document this risk in the README; do not attempt locking in v0.1.
-
-## On forward references
-
-A skill may reference sections or weighting values that depend on references shipping in later Startup Skills versions (`evidence-weighting-matrix.md` in v0.2, etc.). When that happens, the skill logs what it can with the closest available structure and leaves dependent fields blank. It does not invent values to fill schema slots.
+Startup Skills assumes a single Claude session per state file at a time. If a user opens two Claude conversations against the same project, the last writer wins.
 
 ## Failure modes this prevents
 

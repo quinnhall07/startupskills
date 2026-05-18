@@ -34,14 +34,14 @@ This reference is loaded by every evidence-handling skill. Scan the most recent 
 
 These four are not bias detection but bias prevention — frameworks that override delusion by structure rather than willpower.
 
-1. **Evidence Weighting Matrix** (Mom Test–aligned, Fitzpatrick). Every customer statement is classified 0.0 (attitudinal weak) → 1.0 (behavioral absolute) before it lands in the evidence log. "Sounds cool" = 0.0. "Last week I spent four hours on this" = 0.6. "Here's $500, do this for me" = 1.0. The full matrix ships in `references/evidence-weighting-matrix.md` in v0.2; until then, skills use the inline rubric in `discovery-coach` and `signal-audit`.
+1. **Evidence Weighting Matrix** (Mom Test–aligned, Fitzpatrick). Every customer statement is classified 0.0 (attitudinal weak) → 1.0 (behavioral absolute) before it lands in the evidence log. "Sounds cool" = 0.0. "Last week I spent four hours on this" = 0.6. "Here's $500, do this for me" = 1.0. Full matrix in `${CLAUDE_PLUGIN_ROOT}/references/composed/evidence-weighting-matrix.md`; `discovery-coach` and `signal-audit` apply it row-by-row.
 2. **Pre-Mortem** (Gary Klein, *Performing a Project Premortem*). Used by `mvp-architect`, `pivot-decision`, and `pmf-audit`. Imagine the project has catastrophically failed 12 months from now. Write the autopsy. The pre-mortem unlocks risk acknowledgment that direct questioning cannot.
 3. **Reference Class Forecasting** (Lovallo/Kahneman, "Delusions of Success"). Used in every timeline or budget estimation. Build the outside view first — find 3–5 comparable cases, take the median, multiply by 3 if uncertain — then debate from there.
 4. **Falsification Pre-commitments** (Popper-inspired, used by `mvp-architect` and `rapid-experiments`). Every experiment commits in writing to a success criterion AND a kill criterion BEFORE launch. No moving goalposts. The question every skill is secretly asking is "What would change your mind about this?" — if the founder can't answer, they're doing religion, not science.
 
 ## Decision-quality protocols (cross-reference)
 
-For deeper protocols, load `${CLAUDE_PLUGIN_ROOT}/references/decision-journal-template.md`. The core protocols this reference enforces:
+For deeper protocols, load `${CLAUDE_PLUGIN_ROOT}/references/composed/decision-journal-template.md`. The core protocols this reference enforces:
 
 ### Kill Criteria ([Annie Duke, *Quit*](https://www.annieduke.com/books/))
 Format: **"If [measurable state] is not true by [specific date], we quit."**
@@ -110,7 +110,7 @@ If all "no" → force a contrarian pass. State: *"Pausing for a contrarian pass 
 
 **This is not optional.** [Stanford 2026 research](https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research): LLMs endorse user positions ~49% more often than humans. RLHF rewards agreement. Memory features require *extra* sycophancy training. Sycophancy is this system's most likely failure mode. The whole thesis is "structural override of bias" — sycophancy undoes it.
 
-For full sycophancy protocols including the contempt filter, anti-pet-theory rule, and cost-of-decision gate, load `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`.
+For full sycophancy protocols including the contempt filter, anti-pet-theory rule, and cost-of-decision gate, load `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`.
 
 ## Sample exchange — name and move on
 

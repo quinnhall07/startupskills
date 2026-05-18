@@ -127,7 +127,7 @@ Protocol:
 3. Plot cohort retention by signup month, % performing key action over time.
 4. Look for flattening within <12 months. If the curve still decays at month 12, no PMF.
 
-For deeper retention diagnostics, load `${CLAUDE_PLUGIN_ROOT}/references/retention-metrics.md`.
+For deeper retention diagnostics, load `${CLAUDE_PLUGIN_ROOT}/references/composed/retention-metrics.md`.
 
 ## Andrew Chen — Power User Curve (L7 / L28)
 
@@ -196,7 +196,7 @@ Top-of-funnel signups *lie* in AI because COGS scales with usage. New tests:
 - "Users love it" without VD% on a Sean Ellis survey = unfalsifiable.
 - If the product would die when the base model improves 20%, it has model-PMF, not product-PMF.
 
-For full AI-era PMF anti-patterns, load `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md`.
+For full AI-era PMF anti-patterns, load `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md`.
 
 ## First Round's "Levels of PMF"
 
