@@ -1,11 +1,7 @@
 ---
 name: problem-focus
-description: |
-  Drill recursively until the ICP is specific, locatable, and testable. Turns "companies need better X" into "the head of sustainability at Series B-C tech startups needs to report Scope 1-3 to their board, currently builds it manually in Excel." Refuses to proceed if the ICP can't be found online in concentrated form.
-
-  TRIGGER when: after `idea-pressure-test` recommends pursuing the idea; user describes problem abstractly ("companies need better X", "people struggle with Y", "the problem is..."); user says "who is this for", "define my ICP", "narrow down my customer"; Current Hypothesis in `STARTUP-STATE.md` is vague OR ICP fields are empty.
-
-  SKIP: idea is still vague / not pressure-tested (route to `idea-genesis` or `idea-pressure-test` first); founder already has a sharp ICP and is ready to interview (route to `discovery-coach` PREPARE); founder is post-PMF refining HXC (route to `pmf-audit`).
+description: >
+  (startup-skills) Use after an idea passes pressure-test, or when the founder has a vague problem but no sharp hypothesis. Fires on "who is this for," "define my ICP," "companies need better X," or any abstract problem description. Drills recursively until the ICP is specific, locatable, and testable. Refuses to proceed if the ICP cannot be found online in concentrated form.
 ---
 
 # Problem Focus

@@ -1,11 +1,7 @@
 ---
 name: rapid-experiments
-description: |
-  Design behavioral validation experiments matched to the founder's archetype (Fake Door / Wizard of Oz / Concierge / Pre-order). Enforces falsification pre-commitments — success AND kill criteria in writing before deployment. Refuses Fake Door tests for B2B enterprise.
-
-  TRIGGER when: user says "how do I test this", "validate before building", "Fake Door", "Wizard of Oz", "Concierge MVP", "smoke test", "should I build a prototype", "fastest way to find out"; user is about to start engineering before `mvp-architect`; auto-fire from `problem-focus` when behavioral signal is needed before more interviews; auto-fire from `signal-audit` when recommendation is "behavioral test needed".
-
-  SKIP: user has no hypothesis (route to `problem-focus`); user has converging signal and is ready to scope the real build (route to `mvp-architect`); user is post-launch and asking about iteration tests (route to `continuous-discovery`).
+description: >
+  (startup-skills) Use when the founder needs to test an assumption before building. Fires on "how do I test this," "validate before building," "Fake Door," "Wizard of Oz," "smoke test," or whenever the founder is about to start engineering. Designs the right experiment for the archetype. Enforces falsification pre-commitments before deployment. Refuses Fake Door tests for B2B enterprise.
 ---
 
 # Rapid Experiments

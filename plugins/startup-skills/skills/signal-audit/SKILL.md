@@ -1,11 +1,7 @@
 ---
 name: signal-audit
-description: |
-  PMF running score + freeze gate. Reads entire Evidence Log, classifies new evidence, applies 7 false-signal patterns, computes PMF stage, REFUSES to bless decisions (build/scale/hire/raise) not supported by behavioral evidence. The Aggressive Epistemic Auditor at its sharpest.
-
-  TRIGGER when: after every new evidence point (interview, sales call, signup data, survey result, usage data); before any major decision (build, pivot, hire, raise capital, scale paid acquisition); user says "is this working", "are we close to PMF", "should I build now", "should I scale", "ready to raise", "should I hire", "what's the data saying".
-
-  SKIP: user is in active PMF measurement with deployed product + 40+ users (route to `pmf-audit` for full Sean Ellis methodology); user is pre-interview (route to `discovery-coach` PREPARE); user is in active pivot decision (route to `pivot-decision`); user wants to design a behavioral test (route to `rapid-experiments`).
+description: >
+  (startup-skills) Use after new evidence arrives or before any major decision (build, hire, raise, scale). Fires on "is this working," "are we close to PMF," "should I build now," or "what's the data saying." Reads the entire Evidence Log, classifies new evidence, applies 7 false-signal patterns, computes PMF stage, and refuses to bless decisions not supported by behavioral evidence.
 ---
 
 # Signal Audit

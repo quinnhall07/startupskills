@@ -1,11 +1,7 @@
 ---
 name: artifact-builder
-description: |
-  Produces polished external-facing deliverables (pitch decks, landing pages, one-pagers, investor emails, demo day scripts) ON DEMAND, pulled from `STARTUP-STATE.md`. Refuses pre-signal pitch decks. Marks thin sections explicitly so founders know substantiated vs. aspirational. Surfaces `positioning-narrative` if positioning section is empty.
-
-  TRIGGER when: user explicitly requests an artifact — "create a pitch deck", "build me a landing page", "draft a one-pager", "investor email", "demo day deck", "fundraising materials"; calling skill surfaces an artifact option and user confirms.
-
-  SKIP: user wants an interview script (route to `discovery-coach` PREPARE — canonical source); user wants outreach batch (route to `outreach-engine`); user wants MVP spec (route to `mvp-architect`); pre-signal pitch deck request (refuse OR produce one-pager with explicit thin-section warnings); user has no positioning yet AND pitch deck requested (route to `positioning-narrative` first).
+description: >
+  (startup-skills) Use when the founder needs a polished external-facing deliverable. Fires on "create a pitch deck," "build me a landing page," "draft a one-pager," "investor email," or "demo day deck." Pulls all content from the current state document. Refuses to produce a pitch deck pre-signal. Routes to `positioning-narrative` if positioning is missing.
 ---
 
 # Artifact Builder

@@ -1,11 +1,7 @@
 ---
 name: orientation
-description: |
-  Entry point for Startup Skills. Initializes `STARTUP-STATE.md` and routes the founder to the correct next skill based on where they actually are (vs. where they wish they were). Establishes the Aggressive Epistemic Auditor stance from message one.
-
-  TRIGGER when: first session in a project (no `.claude/startup-state.md` exists); user says "help me with my startup", "I have an idea", "where do I begin", "I want to start a company", "what should I do next", "I'm stuck", "I'm working on a startup"; the user is starting a new project without prior context.
-
-  SKIP: `.claude/startup-state.md` exists AND was updated <7 days ago (read state, continue from the skill named in the most recent Session Log entry); user is mid-flow in another skill; user is asking a tactical question (pricing, deck, outreach) — route directly to that skill.
+description: >
+  (startup-skills) Entry point for the Startup Skills system. Fires on "help me with my startup," "I have an idea," "where do I begin," or at the start of any new startup session. Initializes STARTUP-STATE.md and routes to the right next skill based on where the founder actually is — not where they wish they were. Does not activate if a state document was updated within the last 7 days.
 ---
 
 # Orientation

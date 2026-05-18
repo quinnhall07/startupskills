@@ -1,11 +1,7 @@
 ---
 name: idea-genesis
-description: |
-  Surface 5-7 candidate idea spaces from the founder's lived experience + parallel web research on their domain. Refuses Solution-In-Search-of-a-Problem framings outright. Uses PG's "notice, don't think up" framing.
-
-  TRIGGER when: founder explicitly has no idea or has several and can't choose; says "I have no idea", "what should I build", "I want to start something", "exploring", "brainstorming ideas", "shopping for ideas"; after `founder-context` for Option 1 from `orientation`; founder pitches a SISP framing ("AI is cool, what should I apply it to?") and needs redirect.
-
-  SKIP: founder is already pressure-testing a specific idea (route to `idea-pressure-test`); founder has a sharp hypothesis (route to `problem-focus`); Founder Profile is empty (route to `founder-context` first).
+description: >
+  (startup-skills) Use when the founder has no idea or is generating candidates. Fires on "I have no idea," "what should I build," "I want to start something," or "brainstorming ideas." Runs an organic interview track alongside parallel web research. Surfaces 5-7 candidate idea spaces. Refuses Solution-In-Search-of-a-Problem framings like "AI is cool, what should I apply it to?"
 ---
 
 # Idea Genesis

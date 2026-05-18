@@ -1,11 +1,7 @@
 ---
 name: cofounder-decision
-description: |
-  Cofounder conflict, breakup, mid-flight equity disputes. Distinct from `cofounder-fit` (initial team gap diagnosis). Refuses to help one founder convince the other without both present. Three outcomes: continue with role realignment / one founder exits cleanly / pivot both align on.
-
-  TRIGGER when: user says "cofounder disagrees", "cofounder wants to quit", "should I fire my cofounder", "cofounder fight", "we can't agree on direction", "cofounder breakup", "vesting cliff is coming"; user is asking how to convince another founder of something; founder reports a sustained 2+ week disagreement.
-
-  SKIP: this is an initial team-gap question (no current cofounder, evaluating a candidate) → route to `cofounder-fit`; the conflict is about a specific tactical decision (pricing, pivot, hire) → route to the relevant decision-gate skill first; user wants help drafting a separation agreement (route to legal counsel — out of scope).
+description: >
+  (startup-skills) Use when cofounders are in active conflict, considering a breakup, or navigating mid-flight equity disputes. Fires on "cofounder disagrees," "should I fire my cofounder," "cofounder breakup," "vesting cliff," or a sustained 2+ week disagreement. Distinct from `cofounder-fit` (initial team gap diagnosis). Refuses to help one founder convince the other without both present.
 ---
 
 # Cofounder Decision

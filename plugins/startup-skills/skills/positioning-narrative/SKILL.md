@@ -1,11 +1,7 @@
 ---
 name: positioning-narrative
-description: |
-  Position the product (Dunford 10-step) and write the strategic narrative (Raskin 5-act). Output: position statement + competitive alternatives + narrative spine. Feeds `artifact-builder` for decks/websites and `outreach-engine` for cold email subject lines. Refuses positioning before early-signal PMF.
-
-  TRIGGER when: user is about to write a pitch deck, website, cold email, or one-pager; user says "how do I describe what we do", "what's our positioning", "elevator pitch", "messaging", "narrative", "category"; PMF stage >= early-signal AND `STARTUP-STATE.md` Positioning section is empty.
-
-  SKIP: user is pre-validation (positioning needs an HXC; route to `discovery-coach` and `signal-audit` first); user is already deep in artifact production (route to `artifact-builder` which surfaces this skill if positioning gap exists); user is asking about a logo or brand identity (out of scope).
+description: >
+  (startup-skills) Use when the founder needs to position the product and write a strategic narrative. Fires on "how do I describe what we do," "our positioning," "elevator pitch," "messaging," or before any pitch deck, website, or cold email is written. Applies Dunford's 10-step process and Raskin's 5-act framework. Refuses positioning before early-signal PMF.
 ---
 
 # Positioning Narrative

@@ -1,11 +1,7 @@
 ---
 name: idea-pressure-test
-description: |
-  Steel-man a specific idea first, then score against Dalton's 4-criteria rubric AND YC's 10-question framework — backed by live `market-intel` research. Detects tar pits, schlep blindness, SISP framings. Willing to recommend "kill it."
-
-  TRIGGER when: founder pitches a concrete, named idea ("I want to build X for Y"); user says "is this a good idea", "what do you think of [idea]", "should I work on this", "evaluate my idea", "score my idea"; after `idea-genesis` for any chosen candidate.
-
-  SKIP: idea is vague / SISP-shaped (route to `idea-genesis`); idea is sharp and validated, founder wants to operationalize (route to `problem-focus` or `mvp-architect`); idea is post-PMF (out of scope).
+description: >
+  (startup-skills) Use when the founder has a specific idea to evaluate. Fires on "is this a good idea," "should I work on this," "evaluate my idea," or whenever a concrete concept is pitched. Steel-mans first, then scores against Dalton's 4-criteria rubric and the YC 10-question framework backed by live market-intel research. Detects tar pits, schlep blindness, and SISP framings. Will say "this looks like a kill" when the evidence points there.
 ---
 
 # Idea Pressure Test

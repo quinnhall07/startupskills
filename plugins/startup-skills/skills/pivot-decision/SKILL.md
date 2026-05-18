@@ -1,11 +1,7 @@
 ---
 name: pivot-decision
-description: |
-  Structured decision gate: continue / adjust / pivot. Reads entire `STARTUP-STATE.md`, runs Dalton's opportunity cost calc + Klein's pre-mortem, aggressively counters sunk cost (Annie Duke). Generates 3-5 scored pivot candidates rooted in what the founder has ALREADY learned. The sharpest emotional moment in the system.
-
-  TRIGGER when: user says "should I pivot", "stuck", "this isn't working", "I've been at this for months", "considering changing direction", "should I quit", "maybe I should try something different"; routine cadence (every 4-6 weeks during active building); auto-fire from `signal-audit` when pre-signal for 3+ months; auto-fire from `pmf-audit` when Sean Ellis declining quarter-over-quarter.
-
-  SKIP: user is in active cofounder conflict (route to `cofounder-decision` first — cofounder alignment must be resolved before pivot decision); user is depleted / making decision under stress (route to `founder-resilience` first); user is pre-validation with no committed direction (route to `idea-pressure-test`); user just had bad day, not chronic signal (run sustainable-pace check first).
+description: >
+  (startup-skills) Use every 4-6 weeks during active building, or whenever the founder is stuck or doubting direction. Fires on "should I pivot," "this isn't working," "I've been at this for months," or "considering changing direction." Runs Dalton's opportunity cost calculation and a Klein-style pre-mortem. Aggressively counters sunk cost. Generates 3-5 scored pivot candidates if a pivot is recommended.
 ---
 
 # Pivot Decision

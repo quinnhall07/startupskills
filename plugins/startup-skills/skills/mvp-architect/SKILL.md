@@ -1,11 +1,7 @@
 ---
 name: mvp-architect
-description: |
-  Ruthlessly cut features against a single validated hypothesis. Hard 2-6 week deadline. Identifies the hair-on-fire early adopter (Seibel brick test). Refuses to scope a build without behavioral signal — or forces explicit risk acknowledgment with logged date.
-
-  TRIGGER when: user says "time to build", "what should v1 include", "ready to write code", "I have validation, now what", "what's the minimum I need to ship"; auto-fire from `rapid-experiments` when results meet success criteria; auto-fire from `signal-audit` when stage advances to early-signal+ AND user asks about building.
-
-  SKIP: user has no behavioral signal (route to `rapid-experiments` first, OR force explicit risk acknowledgment per HARD-GATE); user wants to choose the AI build stack (route to `ai-mvp-stack-selection`); user is post-MVP looking at v2 (route to `continuous-discovery`); user is post-launch needing first customers (route to `outreach-engine`).
+description: >
+  (startup-skills) Use when behavioral validation is strong enough to justify building. Fires on "time to build," "what should v1 include," "ready to write code," or "I have validation, now what." Ruthlessly cuts features against a single validated hypothesis. Sets a hard 2-6 week deadline. Refuses to authorize building without behavioral signal from `rapid-experiments`.
 ---
 
 # MVP Architect

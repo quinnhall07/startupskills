@@ -1,11 +1,7 @@
 ---
 name: market-intel
-description: |
-  Independent web research as a structured brief — pain expressed, customer vocabulary, who's building, what's missing, why-now, failed attempts, tar-pit check. Built so other skills can call as a subroutine. Refuses TAM as validation.
-
-  TRIGGER when: auto-invoked by `idea-genesis`, `idea-pressure-test`, `problem-focus`, `outreach-engine`, `rapid-experiments`, `pmf-audit` when research is load-bearing; user says "what's happening in X", "who else is building Y", "is anyone complaining about Z online", "search for competitors", "do research on this", "find me the players in this space", "what do reviews say about [tool]"; staleness check fires (last `market-intel` on this topic >30 days ago per Research Cache).
-
-  SKIP: user is asking about a tactical question that doesn't need research (e.g., "how do I write a cold email" → `outreach-engine`); user wants research on a vague non-topic ("the future of work") — drill to specific first; topic was just researched <30 days ago — cite cached brief instead.
+description: >
+  (startup-skills) Use whenever independent web research on a market, problem, competitor, or domain is needed. Fires on "what's happening in X," "who else is building Y," "search for competitors," or "do research on this," and auto-fires from idea-pressure-test, problem-focus, and outreach-engine. Runs 5-10 targeted searches across Reddit, G2, Crunchbase, job postings, and post-mortems. Produces a structured brief. Refuses TAM math as validation.
 ---
 
 # Market Intel

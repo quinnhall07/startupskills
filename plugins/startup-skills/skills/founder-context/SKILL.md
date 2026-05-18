@@ -1,11 +1,7 @@
 ---
 name: founder-context
-description: |
-  Capture who the founder is: domain expertise, technical ability, time horizon, resources, archetype, risk tolerance, starting point. Without this, every later skill speculates. Runs parallel domain research while interviewing. Pattern-matches the founder to known case-study analogues.
-
-  TRIGGER when: right after `orientation` for any new founder; Founder Profile section of `STARTUP-STATE.md` is empty OR stale (>90 days); founder reports context change ("I left my job", "I have a cofounder", "I just raised", "I lost runway"); founder says "I work in", "I've been a", "I can't code", "I have X months", "I'm doing this solo", "I have a cofounder".
-
-  SKIP: Founder Profile is already populated AND <90 days old AND user hasn't reported a context change (ask "anything changed since last time?" — if no, skip to routing based on Current Starting Point); user is mid-flow in another skill.
+description: >
+  (startup-skills) Use to capture who the founder is: domain expertise, technical ability, time horizon, resources, risk tolerance, and starting point. Fires on "I work in," "I can't code," "I have X months," "I'm doing this solo," or whenever context changes (left job, found cofounder, raised money). Runs parallel domain research while interviewing. Pattern-matches the founder to known case-study analogues.
 ---
 
 # Founder Context

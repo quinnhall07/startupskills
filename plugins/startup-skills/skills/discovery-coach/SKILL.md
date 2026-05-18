@@ -1,11 +1,7 @@
 ---
 name: discovery-coach
-description: |
-  Customer-interview prep (Mom-Test-aligned scripts) and debrief (evidence classification + false-signal detection). PREPARE before every interview; DEBRIEF after every one. Refuses to count compliments as data. The most important skill in Startup Skills — bad interviews produce false confidence, worse than no interviews.
-
-  TRIGGER when: user says "interview", "talk to users", "just got off a call", "I talked to N people", "need an interview script", "what should I learn from these conversations"; user is about to schedule customer conversations; user reports a finished customer call; Evidence Log in `STARTUP-STATE.md` has new entries since last `discovery-coach` run.
-
-  SKIP: user has no hypothesis yet (route to `problem-focus`); user wants to fundraise (route to `pmf-audit`); user is post-validation in ongoing cadence (route to `continuous-discovery`); user is asking how to phrase a single question rather than running PREPARE/DEBRIEF mode.
+description: >
+  (startup-skills) The most important skill. Use before AND after every customer conversation. Fires on "I'm going to interview users," "I just got off a call," "I need an interview script," or "what should I learn from these conversations." PREPARE mode generates Mom-Test-aligned scripts. DEBRIEF mode classifies every statement by evidence weight, surfaces false signals, and refines the hypothesis.
 ---
 
 # Discovery Coach

@@ -1,11 +1,7 @@
 ---
 name: outreach-engine
-description: |
-  Founder-led, do-things-that-don't-scale outreach. Builds prospect lists, drafts YC-style cold email, computes funnel math backwards from goal, runs Continuous Launch. 2026-current on deliverability (post-Feb 2024 rules), LinkedIn algo (comment-first), signal-based outbound. Refuses paid acquisition pre-PMF, sales hires pre-PMF, press-as-acquisition.
-
-  TRIGGER when: user says "first customers", "cold email", "sales", "how do I get people to buy", "getting traction", "launching", "outreach", "do I need a salesperson", "should I run ads"; auto-fire from `mvp-architect` to recruit first customers in parallel with build; PMF stage ≥ early-signal and user asks how to scale acquisition (after `pmf-audit` confirms 40%+).
-
-  SKIP: user has no committed pricing (route to `pricing-model` first); user has no sharp ICP (route to `problem-focus`); user wants to do brand/content marketing (out of scope — this is founder-led customer acquisition only); user is at scaling stage post-PMF wanting paid acquisition strategy (deeper than this skill).
+description: >
+  (startup-skills) Use when the founder is ready to recruit first customers, write cold emails, or launch. Fires on "first customers," "cold email," "getting traction," or "launching." Builds prospect lists, drafts YC-style outreach, and computes funnel math backwards from goal. 2026-current on deliverability and LinkedIn algo. Refuses paid acquisition, sales hires, and press-as-acquisition pre-PMF.
 ---
 
 # Outreach Engine

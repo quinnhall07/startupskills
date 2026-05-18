@@ -1,11 +1,7 @@
 ---
 name: continuous-discovery
-description: |
-  Maintain the customer-discovery cadence after validation. Builds and updates an Opportunity Solution Tree (Torres). Forces weekly customer touchpoints to prevent PMF drift. Routes assumption tests to `rapid-experiments`. Refuses to let the team stop interviewing after launch.
-
-  TRIGGER when: user is post-MVP launch or PMF stage >= early-signal; user asks "what features should I build next", "what should be on the roadmap", "are we still doing customer interviews", "weekly customer cadence"; calendar trigger (>14 days since last logged customer interview); a new feature request arrives that hasn't been independently validated.
-
-  SKIP: user is pre-validation (route to `discovery-coach` PREPARE/DEBRIEF instead); user is at pre-signal stage with <20 ICP conversations (still building the foundation; route to `discovery-coach`); user is in a pivot decision (route to `pivot-decision`).
+description: >
+  (startup-skills) Use post-launch to maintain the customer-discovery cadence and prevent PMF drift. Fires on "what features should I build next," "weekly customer cadence," or whenever more than 14 days have passed since the last logged customer interview. Builds and updates an Opportunity Solution Tree (Torres). Refuses to let the team stop interviewing after launch.
 ---
 
 # Continuous Discovery

@@ -1,11 +1,7 @@
 ---
 name: cofounder-fit
-description: |
-  Diagnose team gaps against the founder's idea. Applies YC's non-negotiable rules (work 4 weeks first, near-equal equity, vesting). Produces a 4-week trial protocol on request. Refuses pre-PMF sales hires and contractor v1 builds.
-
-  TRIGGER when: founder mentions cofounders, partners, teammates, equity splits, vesting, or solo status; user says "cofounder", "should I do this alone", "find a technical cofounder", "equity split", "vesting", "co-founder matching", "I'm doing this with [name]"; auto-fire when Founder Profile reveals a clear team gap (domain expert + can't build + no technical cofounder; technical builder + no domain knowledge + no domain cofounder).
-
-  SKIP: founder is in active conflict with existing cofounder (route to `cofounder-decision`); founder is asking about hiring an employee, not a cofounder (out of scope); founder is post-PMF asking about VP hires (out of scope for v2).
+description: >
+  (startup-skills) Use when the founder discusses cofounders, equity splits, solo vs team, or hiring. Fires on "cofounder," "should I do this alone," "find a technical cofounder," "equity split," or "vesting." Applies YC's non-negotiable rules (work together first, near-equal equity, vesting mandatory). Refuses pre-PMF sales hires and contractor-built v1s. Routes active cofounder conflicts to `cofounder-decision`.
 ---
 
 # Cofounder Fit

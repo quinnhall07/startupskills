@@ -1,11 +1,7 @@
 ---
 name: pmf-audit
-description: |
-  Full Sean Ellis 40% Rule + Rahul Vohra's Superhuman blueprint applied to the founder's actual data. Refuses scaling and paid acquisition until 40% threshold met. Re-runs quarterly. Distinguishes leading indicator (Ellis) from lagging indicator (Andreessen). Adds Casey Winters retention curves, Andrew Chen power user curve, Brian Balfour Four Fits, AI-product PMF specifics.
-
-  TRIGGER when: founder has active product with ≥40 active users (used ≥2x in last 14 days); user says "do I have PMF", "Sean Ellis survey", "is this PMF", "40% rule", "should I scale", "should I fundraise now", "I have users but...", "fundraising readiness"; auto-fire from `signal-audit` when post-launch and founder asks about scaling.
-
-  SKIP: founder has no deployed product OR <40 active users (route to `signal-audit` for pre-product evidence, or `discovery-coach` for more interviews); founder is at survey-design stage and hasn't sent yet (this skill walks through); founder is in chronic pre-signal (route to `pivot-decision`).
+description: >
+  (startup-skills) Use when the founder has an active product with real users and needs to measure product-market fit. Fires on "do I have PMF," "Sean Ellis survey," "should I scale," or "fundraising readiness." Implements the full Sean Ellis 40% Rule, Vohra's Superhuman blueprint, and Casey Winters retention curves. Refuses to authorize scaling or paid acquisition below the 40% threshold.
 ---
 
 # PMF Audit

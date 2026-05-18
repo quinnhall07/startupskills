@@ -1,11 +1,7 @@
 ---
 name: ai-mvp-stack-selection
-description: |
-  Match an MVP to the right AI-build stack (Lovable, Bolt, Cursor + Claude Code, Replit Agent, v0). Enforces the vibe-vs-craft gate — refuses vibe-coding for regulated/payments/auth/PII surfaces. Surfaces the 1000x/10x prototype-vs-production tradeoff explicitly. Token-cost-aware pricing nudges for AI products.
-
-  TRIGGER when: user is starting an MVP and asks about stack; user says "Lovable", "Bolt", "Cursor", "Claude Code", "v0", "Replit Agent", "vibe code", "AI build", "no-code", "build my MVP fast"; technical ability < "can build" AND product is non-trivial; founder is in regulated industry (health/legal/fin) AND mentions any AI build tool.
-
-  SKIP: founder already has a working production MVP (route to `outreach-engine` or `signal-audit`); founder is at idea-validation phase with no committed hypothesis (route to `rapid-experiments` for behavioral test first); founder is asking about model selection (Claude vs. GPT) rather than build stack — out of scope.
+description: >
+  (startup-skills) Use when the founder is selecting an AI build stack for their MVP. Fires on "Lovable," "Bolt," "Cursor," "Claude Code," "Replit Agent," "v0," "vibe code," "build my MVP fast," or any stack comparison. Enforces the vibe-vs-craft gate — refuses vibe-coding for regulated/payments/auth/PII surfaces. Surfaces the 1000x/10x prototype-vs-production tradeoff explicitly. Token-cost-aware pricing nudges for AI products.
 ---
 
 # AI-MVP Stack Selection

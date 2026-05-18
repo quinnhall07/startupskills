@@ -1,11 +1,7 @@
 ---
 name: pricing-model
-description: |
-  Force a price commit (one number, written to state) before MVP scoping or outreach. Selects revenue model by archetype. Refuses B2B freemium pre-PMF. Refuses free trials when money-back works better. Applies Ramanujam's WTP-before-build framing. AI-aware: surfaces token-cost economics, per-seat erosion, outcome-based pricing.
-
-  TRIGGER when: user says "what should I charge", "how should I price", "free vs paid", "should I do freemium", "SaaS vs usage-based", "should I charge upfront", "money-back guarantee", "free trial", "what's the revenue model"; Pricing section of `STARTUP-STATE.md` is empty; auto-fire BEFORE `mvp-architect` (pricing changes MVP shape) and BEFORE `outreach-engine` (pricing changes funnel math).
-
-  SKIP: pricing is already committed in state AND user is asking about scaling/optimization (route to `pmf-audit` for tier expansion); user is asking about fundraising terms (out of scope); user wants to A/B test prices post-launch (route to `continuous-discovery`).
+description: >
+  (startup-skills) Use when the founder is thinking about pricing, revenue model, or monetization. Fires on "what should I charge," "free vs paid," "should I do freemium," or "should I charge upfront." Forces a price commit before MVP scoping or outreach. Refuses B2B freemium pre-PMF. AI-aware: surfaces token-cost economics, per-seat erosion, and outcome-based pricing.
 ---
 
 # Pricing Model

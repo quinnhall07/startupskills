@@ -1,11 +1,7 @@
 ---
 name: founder-resilience
-description: |
-  Decision-quality circuit-breaker. Before any major decision (build / raise / quit / hire / fire / pivot), checks founder physiological/emotional state and defers by 24 hours if depleted. Surfaces sustainable-pace, cofounder-alignment, and loneliness diagnostics. NOT self-care content — this is decision hygiene per Annie Duke and Kahneman.
-
-  TRIGGER when: user is about to make a major irreversible decision AND mentions stress signals ("exhausted", "burnt out", "haven't slept", "I'm done", "this is killing me", "can't think straight"); PMF stage = pre-signal for 3+ months AND user is asking about a major next move; user explicitly asks about burnout, sustainable pace, or "should I keep going"; cofounder breakup is being considered (route to `cofounder-decision` AFTER this skill).
-
-  SKIP: user is not in stress AND not making a major decision (this skill is for high-stakes + depleted intersections); user is asking general productivity/work-style questions (out of scope); user wants therapy (out of scope — route to professional resources).
+description: >
+  (startup-skills) Decision-quality circuit-breaker. Use before any major irreversible decision when the founder shows stress or depletion signals. Fires on "exhausted," "burnt out," "can't think straight," "I'm done," or any high-stakes decision combined with emotional distress. NOT self-care — this is decision hygiene per Annie Duke and Kahneman. Defers the decision 24 hours if founder state is depleted.
 ---
 
 # Founder Resilience
