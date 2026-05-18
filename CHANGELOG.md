@@ -2,6 +2,42 @@
 
 All notable changes to Startup Skills are documented here. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [0.6.0] — 2026-05-18
+
+### Architecture — knowledge graph system
+
+- Restructured `references/` from a flat directory into four semantic layers:
+  - `composed/` — 29 pedagogically rich teaching documents (all prior references moved here)
+  - `templates/` — 4 fill-in-verbatim assets (state-document-template, email-templates, pitch-deck-structure, one-pager-structure)
+  - `kernels/<domain>/` — atomic concept layer, populated by `knowledge-pipeline` INGEST mode as sources are processed
+  - `sources/INDEX.md` — append-only provenance table for every ingested source
+- Raw source transcripts gitignored under `resources/`; only kernels and the sources index are committed.
+
+### Added — system skills
+
+- **`knowledge-pipeline`** (`skills/_meta/`) — INGEST/COMPOSE/AUDIT driver for the kernel graph. INGEST extracts atomic claims from a source into kernel files and logs the source in `INDEX.md`. COMPOSE wires kernels into composed references via `[[wikilink]]` citations. AUDIT checks for orphan kernels, unresolved conflicts, stale source links, and skill-graph defects. Never writes without showing diffs first.
+- **`orientation`** moved to `skills/_meta/` — still the entry point for founders, now also a system skill with explicit state initialization and routing logic.
+
+### Changed — skill description format
+
+- All 22 SKILL.md files (21 founder skills + `knowledge-pipeline`) converted from `description: |` TRIGGER/SKIP inline routing to `description: >` with `(startup-skills)` prefix and natural-language firing conditions — the format the knowledge-pipeline AUDIT mode validates.
+- Rich v0.5 body content (HARD-GATE blocks, process steps, red-flag tables, bias sentinel passes) preserved intact.
+- All reference paths updated from flat `references/<file>.md` to `references/composed/<file>.md` or `references/templates/<file>.md`.
+
+### Changed — reference paths
+
+All skill `${CLAUDE_PLUGIN_ROOT}/references/...` paths updated to reflect the new directory structure. No reference content removed; all 33 references are present under their new locations.
+
+### Removed
+
+- `docs/specs/2026-05-12-v0.4-design-spec.md` — superseded by `docs/superpowers/specs/2026-05-18-knowledge-architecture-design.md`.
+- `docs/plans/2026-05-13-startup-skills-v2-improvement-plan.md` — superseded by the implemented architecture.
+
+### Spec docs
+
+- `docs/superpowers/specs/2026-05-18-knowledge-architecture-design.md` — full knowledge architecture design (canonical reference for contributors).
+- `docs/superpowers/plans/2026-05-18-knowledge-architecture-foundation.md` — implementation plan used to execute this release.
+
 ## [0.5.0] — 2026-05-13
 
 ### Added — 5 new skills

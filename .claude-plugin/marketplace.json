@@ -10,7 +10,7 @@
     {
       "name": "startup-skills",
       "source": "./plugins/startup-skills",
-      "description": "Aggressive Epistemic Auditor for founders. 21 skills + 33 references, idea → PMF → post-PMF cadence. YC + Mom Test + Torres continuous discovery + Moesta JTBD + Dunford positioning + Duke/Tetlock decision quality + 2026 AI-era playbook."
+      "description": "Aggressive Epistemic Auditor for founders. 21 skills + 2 system skills + 33 references, idea → PMF → post-PMF cadence. Knowledge graph architecture with kernel ingestion pipeline. YC + Mom Test + Torres + Moesta JTBD + Dunford positioning + Duke/Tetlock decision quality + 2026 AI-era playbook."
     }
   ]
 }
