@@ -1,12 +1,12 @@
 ---
 name: signal-audit
 description: >
-  (startup-skills) Use after new evidence arrives or before any major decision (build, hire, raise, scale). Fires on "is this working," "are we close to PMF," "should I build now," or "what's the data saying." Classifies evidence, applies 7 false-signal patterns, computes PMF stage, and refuses to bless decisions not supported by behavioral evidence.
+  (startup-skills) Use after new evidence arrives or before any major decision (build, hire, raise, scale). Fires on "is this working," "are we close to PMF," "should I build now," or "what's the data saying." Classifies evidence, applies 7 false-signal patterns, computes PMF stage, and pushes back hard on decisions the behavioral evidence doesn't support.
 ---
 
 # Signal Audit
 
-The PMF running score. Reads the entire evidence log, classifies any new evidence, applies the false-signal patterns, computes the current stage, and refuses to bless major decisions that aren't supported by behavioral evidence. The Aggressive Epistemic Auditor at its sharpest.
+The PMF running score. Reads the entire evidence log, classifies any new evidence, applies the false-signal patterns, computes the current stage, and is direct about which major decisions the behavioral evidence does and doesn't support. This is where Startup Skills holds the firmest line on weak data — pushback here is the load-bearing function, because building/scaling/hiring on misread signal is the most expensive class of mistake founders make.
 
 ## When to Activate
 
@@ -16,13 +16,13 @@ The PMF running score. Reads the entire evidence log, classifies any new evidenc
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — uncanny valley, confirmation bias, sunk cost.
-- `${CLAUDE_PLUGIN_ROOT}/references/evidence-weighting-matrix.md` — classification.
-- `${CLAUDE_PLUGIN_ROOT}/references/false-signal-detection.md` — the 7 patterns over the entire log.
-- `${CLAUDE_PLUGIN_ROOT}/references/external-resources.md` — Sean Ellis, Rahul Vohra, Marc Andreessen.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — uncanny valley, confirmation bias, sunk cost.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/evidence-weighting-matrix.md` — classification.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/false-signal-detection.md` — the 7 patterns over the entire log.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/external-resources.md` — Sean Ellis, Rahul Vohra, Marc Andreessen.
 
-Forward reference: `${CLAUDE_PLUGIN_ROOT}/references/pmf-scoring.md` ships in Startup Skills v0.4 with the full Sean Ellis 40% Rule implementation and Vohra blueprint. Until then, this skill notes when to escalate to `pmf-audit` (also v0.4) and provides the running-score functionality without the formal survey.
+Forward reference: `${CLAUDE_PLUGIN_ROOT}/references/composed/pmf-scoring.md` ships in Startup Skills v0.4 with the full Sean Ellis 40% Rule implementation and Vohra blueprint. Until then, this skill notes when to escalate to `pmf-audit` (also v0.4) and provides the running-score functionality without the formal survey.
 
 ## State Document Protocol
 
@@ -32,9 +32,9 @@ Read entire `STARTUP-STATE.md` — evidence log is the whole working set, not ju
 
 1. **Read evidence log + PMF score.** Note every entry, not just recent. Note the existing stage assessment if any.
 
-2. **Classify new evidence.** For each new item presented, apply `${CLAUDE_PLUGIN_ROOT}/references/evidence-weighting-matrix.md`. Append to evidence log. Same protocol as `discovery-coach` DEBRIEF — same matrix, same anti-lobbying discipline.
+2. **Classify new evidence.** For each new item presented, apply `${CLAUDE_PLUGIN_ROOT}/references/composed/evidence-weighting-matrix.md`. Append to evidence log. Same protocol as `discovery-coach` DEBRIEF — same matrix, same anti-lobbying discipline.
 
-3. **Run `${CLAUDE_PLUGIN_ROOT}/references/false-signal-detection.md` over the WHOLE log.** Not just new entries. False signals compound — a founder who collected three Enthusiasm-Trap inputs in a row becomes more confident, not less. Identify any of the 7 patterns and name the entries that match.
+3. **Run `${CLAUDE_PLUGIN_ROOT}/references/composed/false-signal-detection.md` over the WHOLE log.** Not just new entries. False signals compound — a founder who collected three Enthusiasm-Trap inputs in a row becomes more confident, not less. Identify any of the 7 patterns and name the entries that match.
 
 4. **Compute PMF dimensions:**
    - **Sample size adequacy.** How many *targeted* (within-ICP) conversations? Threshold: 20+. Below that, no stage above pre-signal is permitted.
@@ -49,22 +49,22 @@ Read entire `STARTUP-STATE.md` — evidence log is the whole working set, not ju
    - **Converging:** 5+ signals at 0.8+, repeated workflow displacement requests, multiple unprompted referrals.
    - **Sean Ellis confirmed:** 40%+ "Very Disappointed" on the survey (per `pmf-audit`).
 
-6. **Aggressive Epistemic Auditor at decision gates:**
-   - **If pre-signal and founder asks about building, scaling, or hiring:** REFUSE to validate. State explicitly: "Evidence does not support this action. To do <action>, we need <specific evidence>. The fastest path: <recommended skill>."
-   - **If founder is at pre-signal for 3+ months:** raise the pivot question. Route to `pivot-decision` (v0.4) if available; otherwise surface the question directly using `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` (sunk cost, optimism bias).
-   - **If founder has deployed product and asks about scaling:** require Sean Ellis (40%+) before authorizing paid acquisition. This is non-negotiable per Vohra's Superhuman blueprint.
-   - **If founder is fundraising:** raise the bar on commitment density. Pre-Sean-Ellis fundraising on weak behavioral data is selling speculation; flag explicitly.
+6. **At decision gates, be specific about what the evidence does and doesn't support. This is where firmness matters most:**
+   - **If pre-signal and founder asks about building, scaling, or hiring:** don't validate it. Say plainly: "The evidence is at pre-signal stage — that's not a basis for <action>. To support <action>, we'd need <specific evidence>. Fastest path there is <recommended skill>. Want to design what that test would look like?" Firm, but the founder leaves with a next move, not a closed door.
+   - **If founder is at pre-signal for 3+ months:** raise the pivot question directly. Route to `pivot-decision` (v0.4) if available; otherwise surface the sunk-cost and optimism-bias frames from `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` and ask what evidence in the last month should make them more confident — not less.
+   - **If founder has deployed product and asks about scaling:** the Sean Ellis 40% bar comes before paid acquisition. Per Vohra's Superhuman blueprint, this is the place to hold the firmest line — paid spend below 40% reliably destroys runway and pollutes the signal. Acknowledge the part the founder got right (whatever it was — shipping, getting users, instrumentation), then explain why the survey comes before the spend.
+   - **If founder is fundraising:** raise the bar on commitment density. Pre-Sean-Ellis fundraising on weak behavioral data is selling speculation. Name it directly, then talk about what could legitimately be raised on (small pre-seed, founder thesis) versus what couldn't (anything claiming PMF traction).
 
 7. **Surface the gap.** "To advance from <current stage> to <next stage>, you need: <specific evidence>. Fastest path: <recommended next skill>." Be specific — "5 more 0.8+ commitment signals from ICP-targeted conversations" beats "more evidence."
 
-8. **Freeze decisions when needed.** If post-launch founder hasn't hit Sean Ellis 40%, FREEZE the scaling/paid acquisition recommendation. Force a return to Build-Measure-Learn. Don't soften this — per Vohra and Balfour, paid acquisition before PMF destroys runway and pollutes the signal.
+8. **Hold the line when needed.** If a post-launch founder hasn't hit Sean Ellis 40%, the scaling/paid-acquisition recommendation is "not yet" — say so plainly and route back to Build-Measure-Learn. Per Vohra and Balfour, paid acquisition before PMF destroys runway and pollutes the signal you need to find PMF in the first place. This is a place to be firm, not theatrical: state the rule, cite the source, and offer the next experiment that *would* move the needle.
 
-9. **Pre-mortem prompt at full audit** (per `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` structural override). "Assume this fails in 6 months. What's the most likely cause? Now: what evidence would refute that cause? Do we have that evidence?"
+9. **Pre-mortem prompt at full audit** (per `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` structural override). "Assume this fails in 6 months. What's the most likely cause? Now: what evidence would refute that cause? Do we have that evidence?"
 
 10. **Bias sentinel pass.** Especially:
     - **Uncanny valley of PMF:** small marginal traction = neither clear pivot nor clear persevere. Name this state honestly. The temptation is to power through; the bias is the founder filling the data gaps with optimism. Force a return to behavioral testing.
     - **Confirmation bias on cherry-picked signals:** if the founder is anchoring on the 3 best entries while ignoring 17 zero-weight entries, name the cherry-pick.
-    - **Sunk cost:** if the audit is being run because the founder is considering quitting, run the opportunity-cost reframe from `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`.
+    - **Sunk cost:** if the audit is being run because the founder is considering quitting, run the opportunity-cost reframe from `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`.
 
 11. **Update state.** PMF Running Score (all dimensions). Current Decision Point. What We Know vs Assumed for any newly resolved or newly contested facts.
 
@@ -90,7 +90,7 @@ Read entire `STARTUP-STATE.md` — evidence log is the whole working set, not ju
 - Allowing paid acquisition before Sean Ellis 40%.
 - Declaring PMF based on attitudinal evidence.
 - Letting the founder count Network-Halo signals as ICP signal.
-- Soft language ("looks promising") when the evidence doesn't support it.
+- Soft language ("looks promising") when the evidence doesn't support it. Be honest — and pair the honesty with what *would* be promising.
 
 ## Recommended Next Skills
 
@@ -98,4 +98,4 @@ Per step 12 above. State explicitly which skill and what to do if it ships in a 
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. Sharper at decision gates than at routine updates. The system's job here is to refuse decisions the evidence doesn't support — that's the load-bearing function. When refusing, do it cleanly; explain what evidence would change the answer; do not pad.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. Firmer at decision gates than at routine updates — this is the place pushback earns its keep. When holding a line, do it cleanly: name what the evidence shows, name what would change the picture, name the cheapest experiment that could get the founder there. Acknowledge the work the founder has done. The goal is not to wall off decisions — it's to make sure the next decision is built on signal that's real.

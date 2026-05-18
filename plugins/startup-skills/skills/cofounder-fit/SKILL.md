@@ -1,12 +1,12 @@
 ---
 name: cofounder-fit
 description: >
-  (startup-skills) Use when the founder discusses cofounders, equity splits, solo vs team, or hiring. Fires on "cofounder," "should I do this alone," "equity split," "vesting," or when the founder profile reveals a clear team gap. Applies YC's rules (work together first, near-equal equity, vesting non-negotiable). Refuses pre-PMF sales hires and contractor v1 builds.
+  (startup-skills) Use when the founder discusses cofounders, equity splits, solo vs team, or hiring. Fires on "cofounder," "should I do this alone," "equity split," "vesting," or when the founder profile reveals a clear team gap. Applies YC's rules (work together first, near-equal equity, vesting non-negotiable). Pushes back hard on pre-PMF sales hires and contractor-built v1s, and explains why the pattern data is so one-sided.
 ---
 
 # Cofounder Fit
 
-Diagnoses team gaps against the founder's idea, applies YC's non-negotiable rules (work together first, near-equal equity, vesting), and produces a 4-week trial protocol on request. Refuses to validate rushed cofounder choices or "I'll just hire a contractor for the v1."
+Diagnoses team gaps against the founder's idea, applies YC's non-negotiable rules (work together first, near-equal equity, vesting), and produces a 4-week trial protocol on request. Holds a firm line on the two patterns the data is most one-sided about — rushed cofounder commitments and contractor-built v1s — and walks through *why* the pattern exists rather than just gatekeeping the decision.
 
 ## When to Activate
 
@@ -19,10 +19,10 @@ Diagnoses team gaps against the founder's idea, applies YC's non-negotiable rule
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — rushing decisions, "we get along great," inside view.
-- `${CLAUDE_PLUGIN_ROOT}/references/cofounder-frameworks.md` — YC rules, 4-week trial protocol, patterns to avoid.
-- `${CLAUDE_PLUGIN_ROOT}/references/external-resources.md` — for YC Cofounder Matching pointer, PG essay.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — rushing decisions, "we get along great," inside view.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/cofounder-frameworks.md` — YC rules, 4-week trial protocol, patterns to avoid.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/external-resources.md` — for YC Cofounder Matching pointer, PG essay.
 
 ## State Document Protocol
 
@@ -38,25 +38,25 @@ Read `STARTUP-STATE.md` for Founder Profile, idea (if any), and current Team sec
    - **Sales / distribution.** Who will actually do outreach and close customers? (Almost always must be a founder pre-PMF.)
    - **Design / UX.** For consumer products: is there product-and-design sense on the team?
 
-3. **Approach by gap type.** Use `${CLAUDE_PLUGIN_ROOT}/references/cofounder-frameworks.md`.
-   - **Technical gap + non-technical founder.** Options in order of preference: (a) learn enough to build v1 yourself — YC's "you only need enough to build v1" framing; (b) cofounder via YC Cofounder Matching or warm network, with the 4-week trial protocol below; (c) explicitly NOT hiring a contractor for the core build — flag as anti-pattern, name it directly.
+3. **Approach by gap type.** Use `${CLAUDE_PLUGIN_ROOT}/references/composed/cofounder-frameworks.md`.
+   - **Technical gap + non-technical founder.** Options in order of preference: (a) learn enough to build v1 yourself — YC's "you only need enough to build v1" framing; (b) cofounder via YC Cofounder Matching or warm network, with the 4-week trial protocol below; (c) hiring a contractor for the core build is the pattern that goes wrong most often, and it's worth being direct about why — contractors don't own the product, can't iterate fast against discovery, and tend to leave behind a brittle codebase nobody else can extend. There are rare exceptions (strong technical advisor on retainer, very narrow scope), and if the founder wants to go this route anyway, surface the conditions where it has actually worked and the tradeoffs.
    - **Domain gap + technical founder.** Customer development can fill this *if* the founder will spend 100+ hours embedded in the domain via interviews. If they won't, recommend a domain cofounder. Stripe-style (technical founders with deep wedge into a specific domain via founder-credibility) is achievable but requires explicit, large commitment to fieldwork.
-   - **Sales gap.** **The skill refuses to validate "hire a sales person" for a pre-PMF company.** Founders do early sales themselves. State this directly per `${CLAUDE_PLUGIN_ROOT}/references/cofounder-frameworks.md`. If the founder is averse to sales, that aversion is itself the diagnostic — surface it.
+   - **Sales gap.** Hiring a salesperson pre-PMF is a pattern that almost always fails — say so plainly. Founders do early sales themselves because the customer signal lives in the sales conversation; you can't outsource learning the market. State this directly per `${CLAUDE_PLUGIN_ROOT}/references/composed/cofounder-frameworks.md`. And if the founder is averse to sales, that aversion is itself the most useful diagnostic in the room — surface it, talk through it, and don't let "hire someone else to do the part I don't want to do" become the unexamined plan.
    - **Design gap, consumer product.** A cofounder with product/design taste is usually load-bearing. For B2B, less so — strong taste can come from a senior PM as employee #1 post-validation.
 
-4. **If the founder is considering a specific person as cofounder**, walk YC's rules from `${CLAUDE_PLUGIN_ROOT}/references/cofounder-frameworks.md`:
+4. **If the founder is considering a specific person as cofounder**, walk YC's rules from `${CLAUDE_PLUGIN_ROOT}/references/composed/cofounder-frameworks.md`:
    - **Work together for at least 4 weeks before committing.** Required, no shortcut. Coffee chats don't count.
    - **Near-equal equity.** 50/50 (or 51/49 for tiebreaker). Lopsided splits between two full-time committed people are a tell that someone is not actually a cofounder.
    - **Vesting non-negotiable.** Four years, one-year cliff.
    - **Founder agreement before traction.** Equity, vesting, decision rights, departure terms — in writing.
    - **Patterns to avoid.** LinkedIn strangers with no prior collaboration, family-members who can't be fired, 90/10 splits.
 
-5. **Bias sentinel pass** per `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`. Specifically:
+5. **Bias sentinel pass** per `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`. Specifically:
    - Rushing into cofounder choice because the founder feels alone and wants a partner. Name it.
    - "We get along great so we'll work well together" — pleasant ≠ productive under pressure.
    - Ignoring financial commitments — what's each person's runway? Can both survive 12 months without salary?
 
-6. **Produce the 4-week trial protocol on request.** Use `${CLAUDE_PLUGIN_ROOT}/references/cofounder-frameworks.md` content verbatim or near-verbatim. Offer it explicitly: "I can write you a 4-Week Cofounder Trial Protocol if you'd like — covers what to ship together each week and what to watch for."
+6. **Produce the 4-week trial protocol on request.** Use `${CLAUDE_PLUGIN_ROOT}/references/composed/cofounder-frameworks.md` content verbatim or near-verbatim. Offer it explicitly: "I can write you a 4-Week Cofounder Trial Protocol if you'd like — covers what to ship together each week and what to watch for."
 
 7. **Update state Team section.** Solo/cofounder/team-of-N; specific gaps diagnosed; plan to fill (cofounder search via X, learn-to-build self, hire-after-PMF, etc.). If a trial is starting, log the start date and the 4-week end date.
 
@@ -86,4 +86,4 @@ Return to the calling phase: usually `idea-pressure-test`, `idea-genesis`, or wh
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. Founders feel lonely; that's the most common reason they rush this decision. Empathy on the loneliness; rigor on the decision. Refuse politely but firmly when the founder pushes for shortcuts.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. Founders feel lonely; that's the most common reason they rush this decision. Empathy on the loneliness; rigor on the decision. Hold firm against shortcuts — and always pair the pushback with the actual paths that work: 4-week trial protocols, YC Cofounder Matching, the cases where it went right. The rules aren't arbitrary; explain the prior incidents that shaped them so the founder understands the *why*, not just the rule.
