@@ -147,7 +147,9 @@ mode — only surface.
    (`stages`, `topics`, `preconditions`, `postconditions`, `successors`,
    `predecessors`) is missing required fields, references a stage name
    outside the controlled vocabulary, or names a successor/predecessor
-   skill that doesn't exist.
+   skill that doesn't exist. Additionally, flag any skill not under
+   `skills/_meta/` that uses `any` as a stage value — the `any` sentinel
+   is reserved for `_meta/` system skills only.
 7. **Skill-graph snapshot.** Auto-generate a human-readable summary of
    the current skill graph (which skill points at which) to the chat —
    do not commit it to the repo.

@@ -247,7 +247,7 @@ predecessors:
 
 **2. STARTUP-STATE.md gains `# Inferred Stage`** — auto-derived from which sections are filled and what numbers are written (e.g., Pricing empty → pre-pricing; PMF score = 35% → at-pmf-threshold; 50+ paying customers + 45% PMF score → ready-to-scale). Hint, not gate.
 
-**3. STARTUP-STATE.md gains `# Session Pointers`** — every skill writes 1-3 forward-looking pointers when it completes. Accumulate across sessions. Orientation reads them as the freshest routing signal.
+**3. STARTUP-STATE.md gains `# Session Pointers`** — every skill writes 1-3 forward-looking pointers when it completes. **Keep the 5 most recent** — append on write, drop the oldest when count exceeds 5 (action items go stale fast; the audit trail belongs in `# Session Log`). Orientation reads them as the freshest routing signal.
 
 **4. The `orientation` skill becomes a graph router** — reads STARTUP-STATE.md, queries skill graph, filters by satisfied preconditions, ranks by (a) explicit session pointer match, (b) stage match, (c) topic match against user's most recent message, surfaces top 1-3 with rationale.
 
