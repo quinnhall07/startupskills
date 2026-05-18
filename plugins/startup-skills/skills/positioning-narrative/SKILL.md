@@ -27,13 +27,13 @@ If founder pushes back: state directly: "Pre-PMF positioning is theatre. Serious
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/positioning-frameworks.md` — Dunford 10-step, Raskin 5-act.
-- `${CLAUDE_PLUGIN_ROOT}/references/pmf-scoring.md` — HXC segmentation.
-- `${CLAUDE_PLUGIN_ROOT}/references/pitch-deck-structure.md` — deck format.
-- `${CLAUDE_PLUGIN_ROOT}/references/one-pager-structure.md` — pre-signal format.
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/positioning-frameworks.md` — Dunford 10-step, Raskin 5-act.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/pmf-scoring.md` — HXC segmentation.
+- `${CLAUDE_PLUGIN_ROOT}/references/templates/pitch-deck-structure.md` — deck format.
+- `${CLAUDE_PLUGIN_ROOT}/references/templates/one-pager-structure.md` — pre-signal format.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`
 
 ## State Document Protocol
 
@@ -108,4 +108,4 @@ Per step 11. `artifact-builder` is the most common next; `outreach-engine` if co
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. Use Dunford's framings directly ("you compete with the status quo first," "categories don't bend"). Refuse "we don't compete with anyone" — name it as a tell that the founder hasn't done positioning work.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. Use Dunford's framings directly ("you compete with the status quo first," "categories don't bend"). Refuse "we don't compete with anyone" — name it as a tell that the founder hasn't done positioning work.

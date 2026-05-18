@@ -35,16 +35,16 @@ Only on explicit request. The system never auto-generates artifacts; the founder
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/pitch-deck-structure.md` — 10–12 slide YC format; what never to include.
-- `${CLAUDE_PLUGIN_ROOT}/references/landing-page-patterns.md` — Fake Door / signup page anatomy.
-- `${CLAUDE_PLUGIN_ROOT}/references/one-pager-structure.md` — async one-page format.
-- `${CLAUDE_PLUGIN_ROOT}/references/email-templates.md` — outreach patterns including investor email shapes.
-- `${CLAUDE_PLUGIN_ROOT}/references/case-studies.md` — for anchor examples.
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — pitch-deck-as-fiction, false traction claims, vanity metrics.
-- `${CLAUDE_PLUGIN_ROOT}/references/positioning-frameworks.md` — Dunford + Raskin; the deck spine.
-- `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` — AI-product narrative refusal cases.
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/templates/pitch-deck-structure.md` — 10–12 slide YC format; what never to include.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/landing-page-patterns.md` — Fake Door / signup page anatomy.
+- `${CLAUDE_PLUGIN_ROOT}/references/templates/one-pager-structure.md` — async one-page format.
+- `${CLAUDE_PLUGIN_ROOT}/references/templates/email-templates.md` — outreach patterns including investor email shapes.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/case-studies.md` — for anchor examples.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — pitch-deck-as-fiction, false traction claims, vanity metrics.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/positioning-frameworks.md` — Dunford + Raskin; the deck spine.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` — AI-product narrative refusal cases.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`
 
 ## State Document Protocol
 
@@ -123,4 +123,4 @@ Whichever skill the founder was in before invoking this one. Artifact-builder is
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. Direct on refusals (pre-signal pitch decks, vanity metrics). When marking thin sections, do not soften — the marks are the value. A polished artifact with unmarked thin sections is worse than a rougher artifact that's honest about what's missing.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. Direct on refusals (pre-signal pitch decks, vanity metrics). When marking thin sections, do not soften — the marks are the value. A polished artifact with unmarked thin sections is worse than a rougher artifact that's honest about what's missing.

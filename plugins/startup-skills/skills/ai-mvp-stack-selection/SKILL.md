@@ -29,12 +29,12 @@ Founders pay the production-hardening cost regardless. Better to pay it once wit
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` — vibe-vs-craft, 8 traps.
-- `${CLAUDE_PLUGIN_ROOT}/references/mvp-examples.md` — canonical narrow MVPs.
-- `${CLAUDE_PLUGIN_ROOT}/references/tool-recommendations.md` — tier 1 stack.
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — especially perfectionism and "fake Steve Jobs."
-- `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` — vibe-vs-craft, 8 traps.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/mvp-examples.md` — canonical narrow MVPs.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/tool-recommendations.md` — tier 1 stack.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — especially perfectionism and "fake Steve Jobs."
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`
 
 ## State Document Protocol
 
@@ -82,7 +82,7 @@ Read `STARTUP-STATE.md`. Pull archetype, hypothesis, technical ability, time hor
 
    Log the decision in `STARTUP-STATE.md` MVP / Experiment Plan with date + rationale.
 
-8. **Reference Class Forecasting** per `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`. Whatever stack is chosen, force outside-view timeline. "Your estimate × 3" if uncertain. Founders consistently underestimate Lovable/Bolt timelines because the demo is 1 hour and they assume production is 1 week.
+8. **Reference Class Forecasting** per `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`. Whatever stack is chosen, force outside-view timeline. "Your estimate × 3" if uncertain. Founders consistently underestimate Lovable/Bolt timelines because the demo is 1 hour and they assume production is 1 week.
 
 9. **Bias sentinel pass.**
    - **"I'll just use Lovable for everything"** — false economy. Lovable for landing + craft-code for production = correct stack mix.
@@ -115,4 +115,4 @@ Per step 11. `mvp-architect` next for craft-code. `rapid-experiments` for vibe-c
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. Direct on the regulated/PII refusal — cite the studies, don't soften. Use Karpathy's vibe-coding framing as the cultural anchor, but enforce the production boundary.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. Direct on the regulated/PII refusal — cite the studies, don't soften. Use Karpathy's vibe-coding framing as the cultural anchor, but enforce the production boundary.

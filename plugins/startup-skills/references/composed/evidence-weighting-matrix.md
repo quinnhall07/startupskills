@@ -1,6 +1,6 @@
 # Evidence Weighting Matrix
 
-Every statement, action, or observation from a prospective customer is classified on a 0.0–1.0 scale before it lands in the Evidence Log. **Behavioral signal weighs more than attitudinal signal, always.** This is the operational core of the Aggressive Epistemic Auditor stance: it converts the founder's natural overweighting of polite responses into a math the system can enforce.
+Every statement, action, or observation from a prospective customer is classified on a 0.0–1.0 scale before it lands in the Evidence Log. **Behavioral signal weighs more than attitudinal signal, always.** This is the operational core of how Startup Skills holds the line on evidence: it converts the founder's natural overweighting of polite responses into a math both sides can see, so the conversation about "is this real signal?" happens against shared numbers instead of feel.
 
 Attribution: aligned with Rob Fitzpatrick, *The Mom Test*. Specific weights are this project's calibration of Fitzpatrick's principles. The Dinnr case study (UK food-startup that failed despite attitudinal validation) is the canonical cautionary example.
 

@@ -35,16 +35,16 @@ If the founder has no deployed product or no qualifying users yet, route back to
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — especially surveying the wrong cohort, building for "Not Disappointed" cohort, fundraising before 40%.
-- `${CLAUDE_PLUGIN_ROOT}/references/pmf-scoring.md` — full Sean Ellis + Vohra workflow.
-- `${CLAUDE_PLUGIN_ROOT}/references/case-studies.md` — Superhuman 22% → 58% case.
-- `${CLAUDE_PLUGIN_ROOT}/references/external-resources.md` — Vohra First Round Review, Ellis posts, Andreessen.
-- `${CLAUDE_PLUGIN_ROOT}/references/retention-metrics.md` — cohort curves, smile vs frown, AI-era retention
-- `${CLAUDE_PLUGIN_ROOT}/references/growth-loops.md` — Four Fits, NRR, CAC payback
-- `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` — model-market-fit failure mode, token economics
-- `${CLAUDE_PLUGIN_ROOT}/references/decision-journal-template.md` — kill criteria, MAP, pre-mortem
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — especially surveying the wrong cohort, building for "Not Disappointed" cohort, fundraising before 40%.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/pmf-scoring.md` — full Sean Ellis + Vohra workflow.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/case-studies.md` — Superhuman 22% → 58% case.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/external-resources.md` — Vohra First Round Review, Ellis posts, Andreessen.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/retention-metrics.md` — cohort curves, smile vs frown, AI-era retention
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/growth-loops.md` — Four Fits, NRR, CAC payback
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` — model-market-fit failure mode, token economics
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/decision-journal-template.md` — kill criteria, MAP, pre-mortem
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`
 
 ## State Document Protocol
 
@@ -55,7 +55,7 @@ Read `STARTUP-STATE.md`. Confirm there is an active product with qualifying user
 1. **Read state. Confirm prerequisites.** There must be a product with ≥40 active users who have used it 2+ times in the last 14 days. If not, stop and route: `signal-audit` for pre-product evidence; `discovery-coach` for more interviews.
 
 2. **If the user hasn't run the Sean Ellis survey:**
-   - Design the survey per `${CLAUDE_PLUGIN_ROOT}/references/pmf-scoring.md`. Core question, four options, the active-user filter.
+   - Design the survey per `${CLAUDE_PLUGIN_ROOT}/references/composed/pmf-scoring.md`. Core question, four options, the active-user filter.
    - Recommend tools: Tally (free) or Typeform for external delivery; Userpilot or Intercom for in-app.
    - Sample size: 40+ valid responses minimum; aim for 100+.
    - Help the founder write the email sending users to the survey — short, founder-personal, single button.
@@ -85,7 +85,7 @@ Read `STARTUP-STATE.md`. Confirm there is an active product with qualifying user
    - **≥ 40%:** significant. Leading-indicator threshold met. Authorize scaling experiments. Recommend continuing the survey quarterly.
    - **< 40%:** the system FREEZES scaling and paid acquisition. State directly: "Below 40%. Scaling and paid acquisition are off the table until we lift this. We're returning to Build-Measure-Learn."
 
-4. **Apply Vohra's Superhuman blueprint** per `${CLAUDE_PLUGIN_ROOT}/references/pmf-scoring.md`.
+4. **Apply Vohra's Superhuman blueprint** per `${CLAUDE_PLUGIN_ROOT}/references/composed/pmf-scoring.md`.
 
    **Segment to the HXC.** Cross-tabulate "Very Disappointed" cohort by:
    - Role / job title.
@@ -106,22 +106,22 @@ Read `STARTUP-STATE.md`. Confirm there is an active product with qualifying user
 
    **50/50 split**: 50% engineering on expanding HXC value, 50% on converting fence-sitters.
 
-4b. **Cohort retention + Power User Curve check** per `${CLAUDE_PLUGIN_ROOT}/references/retention-metrics.md`:
+4b. **Cohort retention + Power User Curve check** per `${CLAUDE_PLUGIN_ROOT}/references/composed/retention-metrics.md`:
    - **Cohort retention curve**: flat by month 3 = real PMF. Decay continuing past month 3 = no PMF regardless of Sean Ellis score.
    - **L7/L28 histogram** (Andrew Chen): smile = real PMF; frown = no PMF.
    - **Anti-PMF signals table** (per `retention-metrics.md`): check against narrative-as-explanation, busy-as-churn-reason, champion-dependency, lengthening cycles, intensifying pricing pushback.
 
    If Ellis is high but retention shows frown curve: HXC may be too narrow OR top-of-funnel novelty is inflating Ellis. Re-segment.
 
-4c. **AI-product PMF specifics** (only if AI-product) per `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md`:
+4c. **AI-product PMF specifics** (only if AI-product) per `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md`:
    - **LTV / inference-cost ratio ≥ 3x**. If a power user's annual COGS exceeds 1/3 of ARR, unit economics collapse at scale.
    - **Margin per active user trend**: should improve with cohort age. Flat or declining = no real moat.
    - **Model-Market-Fit check**: D28 cohort retention <30% (B2B) or <15% (consumer) = model-market-fit (people want to try AI), not PMF (people use YOUR product).
    - **AI-substitution test**: Is your core JTBD now achievable in ChatGPT/Claude in <30s? If yes, you're on the PMF Treadmill — re-segment to HXC for whom your differentiation still holds, OR pivot.
 
-5. **Surface the Andreessen lagging-indicator complement** per `${CLAUDE_PLUGIN_ROOT}/references/pmf-scoring.md`. Look for: support overwhelmed, organic word-of-mouth, peer-to-peer referrals, servers melting. If the Ellis score is high but these are absent after 6+ months, examine the HXC's TAM — the cohort may be too small to produce company-level signal.
+5. **Surface the Andreessen lagging-indicator complement** per `${CLAUDE_PLUGIN_ROOT}/references/composed/pmf-scoring.md`. Look for: support overwhelmed, organic word-of-mouth, peer-to-peer referrals, servers melting. If the Ellis score is high but these are absent after 6+ months, examine the HXC's TAM — the cohort may be too small to produce company-level signal.
 
-6. **Pre-mortem prompt at every full audit** (per `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` structural override). "Imagine it's 12 months from now and the company has stalled at this PMF score. Write the autopsy. What was the cause? What evidence would have predicted it?" Use the answer to refine the HXC or the polarity analysis.
+6. **Pre-mortem prompt at every full audit** (per `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` structural override). "Imagine it's 12 months from now and the company has stalled at this PMF score. Write the autopsy. What was the cause? What evidence would have predicted it?" Use the answer to refine the HXC or the polarity analysis.
 
 7. **Bias sentinel pass.** Especially:
    - **Surveying the wrong cohort.** Including inactive users suppresses the score. Including signups who never experienced value suppresses it. Re-filter if necessary.
@@ -137,7 +137,7 @@ Read `STARTUP-STATE.md`. Confirm there is an active product with qualifying user
    - **≥ 40% AND retention is flat by month 3**: `outreach-engine` (now you can scale acquisition). `positioning-narrative` if not yet committed (positioning drives scaling). `artifact-builder` for fundraising materials (which the system will now produce vs refuse).
    - **< 40%**: `discovery-coach` (DEBRIEF) for more interviews on fence-sitter objections, AND `rapid-experiments` for behavioral tests on fence-sitter-objection fixes. Return to `pmf-audit` next quarter.
    - **Score declining 2+ quarters**: invoke `pivot-decision` immediately. Don't soften.
-   - **Score high but retention frown curve**: HXC re-segmentation OR `pivot-decision` if HXC is structurally too small. Load `${CLAUDE_PLUGIN_ROOT}/references/retention-metrics.md`.
+   - **Score high but retention frown curve**: HXC re-segmentation OR `pivot-decision` if HXC is structurally too small. Load `${CLAUDE_PLUGIN_ROOT}/references/composed/retention-metrics.md`.
    - **Token-cost economics breaking** (AI-product): `pricing-model` to migrate to outcome-based or hybrid.
 
 ## Red flags
@@ -180,4 +180,4 @@ Per step 9. State explicitly.
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. Sharp at the freeze decision (the score is below 40% and the founder wants to scale anyway). Vohra's blueprint is operational; treat it as the engine, not a one-time event.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. Sharp at the freeze decision (the score is below 40% and the founder wants to scale anyway). Vohra's blueprint is operational; treat it as the engine, not a one-time event.

@@ -28,13 +28,13 @@ If any unchecked: state directly: "I can't help one founder convince the other. 
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/cofounder-frameworks.md` — YC rules, separation patterns.
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — sunk cost, loss aversion, identity-protective cognition.
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md` — Crucial Conversations, contempt filter.
-- `${CLAUDE_PLUGIN_ROOT}/references/decision-journal-template.md` — MAP, Tenth Man, Independence rule.
-- `${CLAUDE_PLUGIN_ROOT}/references/founder-resilience-protocols.md` — alignment one-liner.
-- `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/cofounder-frameworks.md` — YC rules, separation patterns.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — sunk cost, loss aversion, identity-protective cognition.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md` — Crucial Conversations, contempt filter.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/decision-journal-template.md` — MAP, Tenth Man, Independence rule.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/founder-resilience-protocols.md` — alignment one-liner.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`
 
 ## State Document Protocol
 
@@ -57,7 +57,7 @@ Read entire state (Team, Evidence Log, Session Log). Update Team section with co
    - **Preference:** "I want to build for SMBs; my cofounder wants enterprise." → no objectively right answer. Surface as preference. Each founder names what would change their mind.
    - **Identity:** "My cofounder doesn't take this seriously." → underlying value conflict. Address directly.
 
-4. **Apply the cofounder alignment one-liner** (per `${CLAUDE_PLUGIN_ROOT}/references/founder-resilience-protocols.md`). Each founder completes separately, in writing:
+4. **Apply the cofounder alignment one-liner** (per `${CLAUDE_PLUGIN_ROOT}/references/composed/founder-resilience-protocols.md`). Each founder completes separately, in writing:
    > "My cofounder and I both believe our biggest risk is _______ and our biggest advantage is _______."
    Compare answers. Divergence = different theories of the business. Reconcile or surface the irreconcilability.
 
@@ -66,20 +66,20 @@ Read entire state (Team, Evidence Log, Session Log). Update Team section with co
    - Founder B: same calculus.
    - Often the answer is asymmetric — and the asymmetry is the source of the conflict.
 
-6. **MAP — Mediating Assessments Protocol** (per `${CLAUDE_PLUGIN_ROOT}/references/decision-journal-template.md`). Decompose into 5 dimensions: business viability (independent of cofounder), founder-market-fit per founder, working relationship quality, financial constraints, life/family alignment. Each founder scores all 5 BEFORE discussing. Compare scores. Pattern of disagreement reveals the load-bearing dimension.
+6. **MAP — Mediating Assessments Protocol** (per `${CLAUDE_PLUGIN_ROOT}/references/composed/decision-journal-template.md`). Decompose into 5 dimensions: business viability (independent of cofounder), founder-market-fit per founder, working relationship quality, financial constraints, life/family alignment. Each founder scores all 5 BEFORE discussing. Compare scores. Pattern of disagreement reveals the load-bearing dimension.
 
-7. **Tenth Man pass.** If both founders agree on one outcome, REQUIRE one of them to articulate the strongest case for the opposite. (Per `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md` and `${CLAUDE_PLUGIN_ROOT}/references/decision-journal-template.md`.) Prevents premature consensus driven by relationship-preservation.
+7. **Tenth Man pass.** If both founders agree on one outcome, REQUIRE one of them to articulate the strongest case for the opposite. (Per `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md` and `${CLAUDE_PLUGIN_ROOT}/references/composed/decision-journal-template.md`.) Prevents premature consensus driven by relationship-preservation.
 
 8. **Generate three structured outcomes:**
    - **Continue with role realignment.** Specific changes: who owns what, decision rights, weekly checkpoint, equity ratio honest. Vesting cliff acknowledged.
-   - **One founder exits cleanly.** Per `${CLAUDE_PLUGIN_ROOT}/references/cofounder-frameworks.md` separation patterns: vesting + buyback per founder agreement, dignity preserved, equity transferred per contract, no surprise to the cap table.
+   - **One founder exits cleanly.** Per `${CLAUDE_PLUGIN_ROOT}/references/composed/cofounder-frameworks.md` separation patterns: vesting + buyback per founder agreement, dignity preserved, equity transferred per contract, no surprise to the cap table.
    - **Pivot both align on.** Route to `pivot-decision`. Both must commit to the new direction or the conflict re-emerges in 30 days.
 
-9. **Bias sentinel pass** per `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`:
+9. **Bias sentinel pass** per `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`:
    - **Sunk cost on the relationship** ("we've been at this together for 2 years"). Name it.
    - **Loss aversion** ("I'll lose what we've built"). Reframe per Annie Duke: future expected value, not past.
    - **Identity-protective cognition.** "I'm not the kind of person who quits / fires a cofounder." → name the bias, surface the costs of not deciding.
-   - **Contempt filter** (per `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`). Refuse to engage with framing that attacks one founder's character. Critique behaviors, not the person.
+   - **Contempt filter** (per `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`). Refuse to engage with framing that attacks one founder's character. Critique behaviors, not the person.
 
 10. **Surface the decision-by-default risk.** Cofounder conflicts left unresolved compound. Sunk-cost grows, resentment compounds, the equity dispute gets harder to resolve cleanly. If a decision is deferred, name the cost: "Every additional month without resolution makes a clean exit harder."
 
@@ -87,7 +87,7 @@ Read entire state (Team, Evidence Log, Session Log). Update Team section with co
 
 12. **Recommend next.**
     - Continue → `signal-audit` at 4-week checkpoint to verify the realignment is producing different decisions.
-    - Exit → route to legal counsel (out of scope for this skill). Surface the YC founder-agreement separation pattern from `${CLAUDE_PLUGIN_ROOT}/references/cofounder-frameworks.md`.
+    - Exit → route to legal counsel (out of scope for this skill). Surface the YC founder-agreement separation pattern from `${CLAUDE_PLUGIN_ROOT}/references/composed/cofounder-frameworks.md`.
     - Pivot → `pivot-decision`.
 
 ## Outputs
@@ -110,4 +110,4 @@ Per step 12.
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md` and `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`. The sharpest emotional moment in the system, second only to `pivot-decision`. Empathy on the difficulty of the conversation; rigor on the decision. Refuse contempt-laden framing without compromising the truth of the diagnosis.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md` and `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`. The sharpest emotional moment in the system, second only to `pivot-decision`. Empathy on the difficulty of the conversation; rigor on the decision. Refuse contempt-laden framing without compromising the truth of the diagnosis.

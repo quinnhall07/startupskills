@@ -18,6 +18,9 @@ Thumbs.db
 .claude/settings.local.json
 .claude/startup-state.md
 
+# Raw source transcripts (local only)
+resources/
+
 # Secrets / credentials
 .env
 .env.*

@@ -31,15 +31,15 @@ Steel-mans the idea first, then scores it across Dalton's 4-criteria rubric and 
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — confirmation bias, optimism bias, anchoring, schlep blindness, inside view.
-- `${CLAUDE_PLUGIN_ROOT}/references/scoring-rubrics.md` — Dalton's 4-criteria rubric AND the YC 10-question framework.
-- `${CLAUDE_PLUGIN_ROOT}/references/tar-pit-detection.md` — for the canonical tar pit list and the schlep-vs-tar-pit diagnostic.
-- `${CLAUDE_PLUGIN_ROOT}/references/case-studies.md` — for real-world anchor companies.
-- `${CLAUDE_PLUGIN_ROOT}/references/external-resources.md` — for the right essays and videos to surface.
-- `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` — 8 AI-era founder traps + wrapper test.
-- `${CLAUDE_PLUGIN_ROOT}/references/jtbd-protocols.md` — Ulwick ODI for B2B fit.
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — confirmation bias, optimism bias, anchoring, schlep blindness, inside view.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/scoring-rubrics.md` — Dalton's 4-criteria rubric AND the YC 10-question framework.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/tar-pit-detection.md` — for the canonical tar pit list and the schlep-vs-tar-pit diagnostic.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/case-studies.md` — for real-world anchor companies.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/external-resources.md` — for the right essays and videos to surface.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` — 8 AI-era founder traps + wrapper test.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/jtbd-protocols.md` — Ulwick ODI for B2B fit.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`
 
 ## State Document Protocol
 
@@ -53,17 +53,17 @@ Read `STARTUP-STATE.md` to pull the idea, founder profile, and any prior pressur
 
 3. **Invoke `market-intel`** on the idea. Check `STARTUP-STATE.md` Research Cache: if `market-intel` was last run on this topic <30 days ago, cite the prior research. Otherwise, run fresh. Pull: pain expressed, customer vocabulary, who's building, what's missing, why-now, failed attempts, tar-pit check.
 
-4. **Score Dalton's 4-criteria rubric** from `${CLAUDE_PLUGIN_ROOT}/references/scoring-rubrics.md` — Market size, FMF, Ease of getting started, Early market feedback. One sentence of reasoning per score. FMF veto-weighted: if FMF < 5, the composite recommendation is constrained regardless of other scores.
+4. **Score Dalton's 4-criteria rubric** from `${CLAUDE_PLUGIN_ROOT}/references/composed/scoring-rubrics.md` — Market size, FMF, Ease of getting started, Early market feedback. One sentence of reasoning per score. FMF veto-weighted: if FMF < 5, the composite recommendation is constrained regardless of other scores.
 
-5. **Write one paragraph per question of the YC 10-question framework.** From `${CLAUDE_PLUGIN_ROOT}/references/scoring-rubrics.md`. Be concrete. Cite `market-intel` findings or `case-studies.md` analogues where applicable.
+5. **Write one paragraph per question of the YC 10-question framework.** From `${CLAUDE_PLUGIN_ROOT}/references/composed/scoring-rubrics.md`. Be concrete. Cite `market-intel` findings or `case-studies.md` analogues where applicable.
 
 6. **Run detection passes.**
-   - **Tar pit:** if the idea matches a pattern in `${CLAUDE_PLUGIN_ROOT}/references/tar-pit-detection.md`, name the specific tar pit and the structural reason it fails. Do not soften.
-   - **Schlep blindness:** if the founder is dismissing a hard/boring/regulated idea space, surface the schlep counter-frame and Stripe / PlanGrid / Brex analogues from `${CLAUDE_PLUGIN_ROOT}/references/case-studies.md`.
+   - **Tar pit:** if the idea matches a pattern in `${CLAUDE_PLUGIN_ROOT}/references/composed/tar-pit-detection.md`, name the specific tar pit and the structural reason it fails. Do not soften.
+   - **Schlep blindness:** if the founder is dismissing a hard/boring/regulated idea space, surface the schlep counter-frame and Stripe / PlanGrid / Brex analogues from `${CLAUDE_PLUGIN_ROOT}/references/composed/case-studies.md`.
    - **SISP:** if the idea is technology-first ("I want to use AI to do something"), refuse to evaluate as a startup idea. Redirect to `idea-genesis` with a clear note that we don't evaluate Solutions In Search of a Problem.
    - **"No competition is good":** if the founder claims no one else is building this, push back hard. Per Dalton: existing competitors is usually a good sign; no competition usually means no market. Force them to find prior attempts before continuing.
 
-7. **Composite recommendation** per `${CLAUDE_PLUGIN_ROOT}/references/scoring-rubrics.md`. Weighting:
+7. **Composite recommendation** per `${CLAUDE_PLUGIN_ROOT}/references/composed/scoring-rubrics.md`. Weighting:
    - FMF is veto-weighted (< 5 = composite constrained regardless).
    - Otherwise: FMF 30% + Market Size 25% + Ease of Start 20% + Early Market Feedback 25%.
    
@@ -73,9 +73,9 @@ Read `STARTUP-STATE.md` to pull the idea, founder profile, and any prior pressur
    - **FMF < 5** → "You don't have founder-market fit. Either find a cofounder who does, or change ideas. I won't help you continue here without an FMF plan."
    - **Otherwise (mixed)** → "Mixed signal. Here are the 2-3 things we'd need to learn before this becomes clear. Run `market-intel` again on the gap, or run a Fake Door via `rapid-experiments` for behavioral data."
 
-8. **Mandatory pattern-match.** From `${CLAUDE_PLUGIN_ROOT}/references/case-studies.md`, cite the closest structural analogue + the load-bearing lesson. If no clean match in the 10 cases, web-search for fresh analogues from YC alumni, IH writeups, or post-mortems. Never skip this step. "This is structurally similar to [Brex / PlanGrid / Stripe / Magic / etc.]. Here's what worked and what didn't for them: …"
+8. **Mandatory pattern-match.** From `${CLAUDE_PLUGIN_ROOT}/references/composed/case-studies.md`, cite the closest structural analogue + the load-bearing lesson. If no clean match in the 10 cases, web-search for fresh analogues from YC alumni, IH writeups, or post-mortems. Never skip this step. "This is structurally similar to [Brex / PlanGrid / Stripe / Magic / etc.]. Here's what worked and what didn't for them: …"
 
-9. **Bias sentinel throughout** per `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`. Especially confirmation bias and optimism bias on the founder's own scoring — if they push back hard on a low FMF score, ask what specific evidence they have, not how strongly they feel.
+9. **Bias sentinel throughout** per `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`. Especially confirmation bias and optimism bias on the founder's own scoring — if they push back hard on a low FMF score, ask what specific evidence they have, not how strongly they feel.
 
 10. **Update state.** Update Current Hypothesis with the steel-manned version. Update Competitive Landscape. Add an entry under What We Know vs What We've Assumed for each scored dimension.
 
@@ -108,4 +108,4 @@ Per the recommendation in step 11 above. State the next step explicitly: "Type `
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. Willing to wound. Steel-man first; then say what's true. Use Dalton's framings ("changing your idea constantly is the norm," "existing competitors is usually a good sign") at natural moments. If recommending "kill," do it cleanly — don't pad.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. Willing to wound. Steel-man first; then say what's true. Use Dalton's framings ("changing your idea constantly is the norm," "existing competitors is usually a good sign") at natural moments. If recommending "kill," do it cleanly — don't pad.

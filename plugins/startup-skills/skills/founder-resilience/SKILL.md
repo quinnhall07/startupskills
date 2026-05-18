@@ -21,11 +21,11 @@ Founders make worse decisions when depleted. The 65%+ of startup decisions that 
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/founder-resilience-protocols.md` — sustainable pace, decision fatigue, loneliness diagnostic.
-- `${CLAUDE_PLUGIN_ROOT}/references/decision-journal-template.md` — Annie Duke 24-hour rule, MAP, kill criteria.
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md` — modulate delivery on emotional state, never soften the claim.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/founder-resilience-protocols.md` — sustainable pace, decision fatigue, loneliness diagnostic.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/decision-journal-template.md` — Annie Duke 24-hour rule, MAP, kill criteria.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md` — modulate delivery on emotional state, never soften the claim.
 
 ## State Document Protocol
 
@@ -35,7 +35,7 @@ Read state. Pull Founder Profile (runway, resource reality, time horizon), recen
 
 1. **Read state.** Pull resource reality, runway, recent decisions. Skim Session Log for cadence — if many sessions in a 48-hour window, that's a stress signal.
 
-2. **Three hygiene questions** (per `${CLAUDE_PLUGIN_ROOT}/references/founder-resilience-protocols.md`):
+2. **Three hygiene questions** (per `${CLAUDE_PLUGIN_ROOT}/references/composed/founder-resilience-protocols.md`):
    - "Are you making this decision under physiological stress? (Sleep <6h, illness, family emergency, financial crisis.)"
    - "Is this decision reversible in 30 days?" If NO, escalate audit pressure.
    - "Is your cofounder seeing the same data the same way?" If NO, route to `cofounder-decision`.
@@ -106,4 +106,4 @@ Per step 12. Usually returns to the originating skill (`mvp-architect`, `pivot-d
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md` and `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`. **Modulate delivery on emotional state; never soften the claim.** Acknowledge the founder's state first ("I see you're exhausted and runway is short"), then deliver the load-bearing truth ("the data still says X"). Empathy on the difficulty; rigor on the decision. This skill especially earns its place by *being firm about deferring* when the founder wants to push through.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md` and `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`. **Modulate delivery on emotional state; never soften the claim.** Acknowledge the founder's state first ("I see you're exhausted and runway is short"), then deliver the load-bearing truth ("the data still says X"). Empathy on the difficulty; rigor on the decision. This skill especially earns its place by *being firm about deferring* when the founder wants to push through.

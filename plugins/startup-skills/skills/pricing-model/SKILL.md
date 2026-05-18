@@ -41,16 +41,16 @@ If founder pushes back: cite Ramanujam's Minivation failure mode. ~90% of pre-PM
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/pricing-frameworks.md` — the rules and revenue models by archetype.
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — freemium-as-cowardice, undercharging.
-- `${CLAUDE_PLUGIN_ROOT}/references/case-studies.md` — Stripe premium pricing, Scribd 4-year free experiment.
-- `${CLAUDE_PLUGIN_ROOT}/references/sales-funnel-math.md` — the implied conversion math at each price point.
-- `${CLAUDE_PLUGIN_ROOT}/references/external-resources.md` — Gustav, Lenny Rachitsky on pricing.
-- `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` — token-cost denial trap.
-- `${CLAUDE_PLUGIN_ROOT}/references/growth-loops.md` — NRR, CAC payback, unit economics.
-- `${CLAUDE_PLUGIN_ROOT}/references/distribution-by-archetype.md` — pricing × archetype × distribution fit.
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/pricing-frameworks.md` — the rules and revenue models by archetype.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — freemium-as-cowardice, undercharging.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/case-studies.md` — Stripe premium pricing, Scribd 4-year free experiment.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/sales-funnel-math.md` — the implied conversion math at each price point.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/external-resources.md` — Gustav, Lenny Rachitsky on pricing.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` — token-cost denial trap.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/growth-loops.md` — NRR, CAC payback, unit economics.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/distribution-by-archetype.md` — pricing × archetype × distribution fit.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`
 
 ## State Document Protocol
 
@@ -62,7 +62,7 @@ Read `STARTUP-STATE.md`; pull ICP, archetype, hypothesis. Update Pricing section
 
 2. **Pull competitor pricing.** Check `STARTUP-STATE.md` Research Cache. If `market-intel` was last run on this topic <30 days ago, cite cached results. Otherwise, invoke `market-intel` OR manually pull 5-10 competitor price points via: LinkedIn Sales Navigator, Product Hunt, G2, or direct company websites. Both paths acceptable.
 
-3. **Surface the revenue models on the table** for this archetype, per `${CLAUDE_PLUGIN_ROOT}/references/pricing-frameworks.md`:
+3. **Surface the revenue models on the table** for this archetype, per `${CLAUDE_PLUGIN_ROOT}/references/composed/pricing-frameworks.md`:
    - **B2B SaaS:** subscription (most common); usage-based for devtools/infra; enterprise contracts for high-ACV.
    - **B2C subscription:** monthly subscription as default.
    - **Marketplace:** take-rate (15–20% start); listing fees if supply is constrained.
@@ -70,17 +70,17 @@ Read `STARTUP-STATE.md`; pull ICP, archetype, hypothesis. Update Pricing section
    - **Services-to-product:** charge as consulting first; productize once you've solved 5+ customers manually.
    - **Freemium:** only when free users generate genuine network/data value.
 
-4. **Apply pricing rules** from `${CLAUDE_PLUGIN_ROOT}/references/pricing-frameworks.md`. Non-negotiable in this skill:
+4. **Apply pricing rules** from `${CLAUDE_PLUGIN_ROOT}/references/composed/pricing-frameworks.md`. Non-negotiable in this skill:
    - **Ramanujam's WTP-before-build** (the master framing). Don't bolt price onto product; design product around the price. The Minivation trap (right product, priced too low) catches 90% of pre-PMF B2B founders.
    - **Charge from day one** for B2B with bounded users + measurable value. Cite Scribd's 4-year free experiment. **Boundary exceptions**: consumer (massive funnel needed), marketplace (liquidity first), strong viral-coefficient products.
    - **Price high enough to signal value.** Stripe premium pricing at launch.
    - **Free trials almost always wrong.** Money-back guarantees usually better.
    - **B2B freemium: refused pre-PMF** unless k > 0.4 AND ACV < $5K AND COGS < $0.50/free-user/mo.
-   - **AI products: per-seat is eroding.** Default to hybrid (platform fee + meter) or outcome-based (10-30% of human-replaced cost, à la Intercom Fin's $0.99/resolution). Per `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` Trap 3 (token-cost denial).
+   - **AI products: per-seat is eroding.** Default to hybrid (platform fee + meter) or outcome-based (10-30% of human-replaced cost, à la Intercom Fin's $0.99/resolution). Per `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` Trap 3 (token-cost denial).
 
 5. **For each candidate price point, compute the implied math:**
    - Path to $1M ARR: $1M / (price × 12) = customers needed.
-   - Cross-reference with `${CLAUDE_PLUGIN_ROOT}/references/sales-funnel-math.md`: at typical 3–5% cold close rate, how many ICP conversations does that take?
+   - Cross-reference with `${CLAUDE_PLUGIN_ROOT}/references/composed/sales-funnel-math.md`: at typical 3–5% cold close rate, how many ICP conversations does that take?
    - Surface this math explicitly. The founder will see whether the price + funnel combo is feasible.
 
 5b. **AI-product gross-margin instrumentation (mandatory if AI-product).** Before committing price, set up: cost-per-request tracking. AI products run 30-60% COGS-to-revenue vs <10% traditional SaaS. Heavy users silently destroy margins. Write to `STARTUP-STATE.md` AI Economics section (schema v2): expected cost per active user, target LTV/inference-cost ratio (≥3x).
@@ -132,4 +132,4 @@ Per step 11. Almost always `mvp-architect` or `outreach-engine` next.
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. Direct on refusals (freemium, free trial, deferring the decision). Cite Scribd and Stripe by name when the founder hedges. The committed number is the artifact; everything else is conversation.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. Direct on refusals (freemium, free trial, deferring the decision). Cite Scribd and Stripe by name when the founder hedges. The committed number is the artifact; everything else is conversation.

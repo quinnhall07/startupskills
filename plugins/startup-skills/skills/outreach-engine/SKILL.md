@@ -45,17 +45,17 @@ If user pushes back on any of these: state plainly. Do not soften.
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — launch fallacy, networking-as-procrastination.
-- `${CLAUDE_PLUGIN_ROOT}/references/email-templates.md` — YC patterns (warm intro, cold to role, cold to founder).
-- `${CLAUDE_PLUGIN_ROOT}/references/sales-funnel-math.md` — realistic conversion rates, backwards math.
-- `${CLAUDE_PLUGIN_ROOT}/references/tool-recommendations.md` — Apollo, Hunter, HubSpot, Pipedrive, close.com.
-- `${CLAUDE_PLUGIN_ROOT}/references/case-studies.md` — Stripe Collison installation, Airbnb manual outreach, DoorDash founder-as-driver.
-- `${CLAUDE_PLUGIN_ROOT}/references/external-resources.md` — Gustav, Kat Manalac, PG, Lenny.
-- `${CLAUDE_PLUGIN_ROOT}/references/distribution-by-archetype.md` — channel-product fit.
-- `${CLAUDE_PLUGIN_ROOT}/references/positioning-frameworks.md` — subject lines flow from positioning.
-- `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` — Trap 7: cold-email blasting post-Feb 2024.
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — launch fallacy, networking-as-procrastination.
+- `${CLAUDE_PLUGIN_ROOT}/references/templates/email-templates.md` — YC patterns (warm intro, cold to role, cold to founder).
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/sales-funnel-math.md` — realistic conversion rates, backwards math.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/tool-recommendations.md` — Apollo, Hunter, HubSpot, Pipedrive, close.com.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/case-studies.md` — Stripe Collison installation, Airbnb manual outreach, DoorDash founder-as-driver.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/external-resources.md` — Gustav, Kat Manalac, PG, Lenny.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/distribution-by-archetype.md` — channel-product fit.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/positioning-frameworks.md` — subject lines flow from positioning.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` — Trap 7: cold-email blasting post-Feb 2024.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`
 
 ## State Document Protocol
 
@@ -68,14 +68,14 @@ Read `STARTUP-STATE.md`; pull ICP, pricing, MVP/Experiment plan. Update Active E
 2. **Invoke `market-intel`** to find specific instances of the ICP if not already done. Pull customer vocabulary; you'll reuse it in the outreach.
 
 3. **Prospect list construction.**
-   - **For B2B:** build a list of 50–100 named individuals. Use LinkedIn search with the ICP's exact role + company size + tech stack. Tools per `${CLAUDE_PLUGIN_ROOT}/references/tool-recommendations.md`: Apollo.io for list-building, Hunter.io for email finding. Warm network first per Gustav's order of difficulty:
+   - **For B2B:** build a list of 50–100 named individuals. Use LinkedIn search with the ICP's exact role + company size + tech stack. Tools per `${CLAUDE_PLUGIN_ROOT}/references/composed/tool-recommendations.md`: Apollo.io for list-building, Hunter.io for email finding. Warm network first per Gustav's order of difficulty:
      1. Personal network (current and ex-colleagues, founder friends).
      2. Startups (especially YC alumni if you have access).
      3. Small companies (10–200 employees).
      4. Large companies.
    - **For B2C:** define 3–5 acquisition channels rather than individual prospects. Specific subreddits, Discord servers, Slack communities, Indie Hackers, niche newsletters.
 
-4. **Email infrastructure check (NEW for 2026).** Per `${CLAUDE_PLUGIN_ROOT}/references/tool-recommendations.md` and `${CLAUDE_PLUGIN_ROOT}/references/sales-funnel-math.md`:
+4. **Email infrastructure check (NEW for 2026).** Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tool-recommendations.md` and `${CLAUDE_PLUGIN_ROOT}/references/composed/sales-funnel-math.md`:
 
    - **Sending domains**: Buy 3-10 secondary domains (e.g., `try-acme.com`). NEVER burn primary. Why: post-Feb 2024 Gmail/Yahoo bulk-sender rules + Nov 2025 enforcement.
    - **Mailboxes**: Google Workspace or Microsoft 365. 2-3 per domain. ≤30-50 emails/mailbox/day.
@@ -88,9 +88,9 @@ Read `STARTUP-STATE.md`; pull ICP, pricing, MVP/Experiment plan. Update Active E
 
    If founder has none of this set up, **deliverability is broken before they send the first email**. Spend the 2-6 weeks on infrastructure FIRST, OR use warm intros only.
 
-   Then draft using `${CLAUDE_PLUGIN_ROOT}/references/email-templates.md`. Custom per recipient. Body personalization > first-line personalization. "Timeline hooks" outperform "problem hooks" (10% vs 4.4% reply per modern benchmarks).
+   Then draft using `${CLAUDE_PLUGIN_ROOT}/references/templates/email-templates.md`. Custom per recipient. Body personalization > first-line personalization. "Timeline hooks" outperform "problem hooks" (10% vs 4.4% reply per modern benchmarks).
 
-5. **Funnel math — backwards from goal**, using updated benchmarks in `${CLAUDE_PLUGIN_ROOT}/references/sales-funnel-math.md`:
+5. **Funnel math — backwards from goal**, using updated benchmarks in `${CLAUDE_PLUGIN_ROOT}/references/composed/sales-funnel-math.md`:
 
    Realistic 2026 founder-led cold outbound:
    - Reply rate: 3-5% (average), 5-10% (good), 10-15% (elite).
@@ -140,7 +140,7 @@ Read `STARTUP-STATE.md`; pull ICP, pricing, MVP/Experiment plan. Update Active E
    | Indie Hackers | Milestone-based | "We hit $X MRR" posts with full breakdown |
    | Reddit | Niche subs after 2-3 weeks of authentic participation | Be a real participant first; never lead with promo. **#1 cited domain in ChatGPT/Gemini/Perplexity/Google AI Overviews** as of early 2026 — distribution leverage matters more than ever. |
 
-10. **Signal-based outbound (free + cheap stack).** Per `${CLAUDE_PLUGIN_ROOT}/references/distribution-by-archetype.md`. Pre-PMF, skip enterprise tools ($50k+/yr 6sense). Use:
+10. **Signal-based outbound (free + cheap stack).** Per `${CLAUDE_PLUGIN_ROOT}/references/composed/distribution-by-archetype.md`. Pre-PMF, skip enterprise tools ($50k+/yr 6sense). Use:
     - **Free signals**: BuiltWith (tech stack), Crunchbase (funding), LinkedIn job listings (hiring intent), GitHub stars (devtools).
     - **Hiring signal**: Job posts naming a competitor's tool, or for a role your tool replaces → highest intent.
     - **Funding signal**: Series A/B in your ICP segment within 30 days → budget unlocked.
@@ -189,4 +189,4 @@ Per step 14. State explicitly: "Type `/skill <name>` to continue."
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. Direct on refusals. Use Gustav's framings ("do things that don't scale"). When the founder hedges on the funnel math ("I'll figure that out as I go"), refuse to proceed without it.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. Direct on refusals. Use Gustav's framings ("do things that don't scale"). When the founder hedges on the funnel math ("I'll figure that out as I go"), refuse to proceed without it.

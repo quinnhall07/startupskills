@@ -42,17 +42,17 @@ The PMF running score. Reads the entire evidence log, classifies any new evidenc
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — uncanny valley, confirmation bias, sunk cost.
-- `${CLAUDE_PLUGIN_ROOT}/references/evidence-weighting-matrix.md` — classification.
-- `${CLAUDE_PLUGIN_ROOT}/references/false-signal-detection.md` — the 7 patterns over the entire log.
-- `${CLAUDE_PLUGIN_ROOT}/references/external-resources.md` — Sean Ellis, Rahul Vohra, Marc Andreessen.
-- `${CLAUDE_PLUGIN_ROOT}/references/retention-metrics.md` — cohort retention + smile-vs-frown curve.
-- `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` — model-market-fit failure mode.
-- `${CLAUDE_PLUGIN_ROOT}/references/decision-journal-template.md` — MAP, Tenth Man, kill criteria.
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — uncanny valley, confirmation bias, sunk cost.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/evidence-weighting-matrix.md` — classification.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/false-signal-detection.md` — the 7 patterns over the entire log.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/external-resources.md` — Sean Ellis, Rahul Vohra, Marc Andreessen.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/retention-metrics.md` — cohort retention + smile-vs-frown curve.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` — model-market-fit failure mode.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/decision-journal-template.md` — MAP, Tenth Man, kill criteria.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`
 
-For full Sean Ellis methodology + Vohra blueprint, load `${CLAUDE_PLUGIN_ROOT}/references/pmf-scoring.md`.
+For full Sean Ellis methodology + Vohra blueprint, load `${CLAUDE_PLUGIN_ROOT}/references/composed/pmf-scoring.md`.
 
 ## State Document Protocol
 
@@ -62,9 +62,9 @@ Read entire `STARTUP-STATE.md` — evidence log is the whole working set, not ju
 
 1. **Read evidence log + PMF score.** Note every entry, not just recent. Note the existing stage assessment if any.
 
-2. **Classify new evidence.** For each new item presented, apply `${CLAUDE_PLUGIN_ROOT}/references/evidence-weighting-matrix.md`. Append to evidence log. Same protocol as `discovery-coach` DEBRIEF — same matrix, same anti-lobbying discipline.
+2. **Classify new evidence.** For each new item presented, apply `${CLAUDE_PLUGIN_ROOT}/references/composed/evidence-weighting-matrix.md`. Append to evidence log. Same protocol as `discovery-coach` DEBRIEF — same matrix, same anti-lobbying discipline.
 
-3. **Run `${CLAUDE_PLUGIN_ROOT}/references/false-signal-detection.md` over the WHOLE log.** Not just new entries. False signals compound — a founder who collected three Enthusiasm-Trap inputs in a row becomes more confident, not less. Identify any of the 7 patterns and name the entries that match.
+3. **Run `${CLAUDE_PLUGIN_ROOT}/references/composed/false-signal-detection.md` over the WHOLE log.** Not just new entries. False signals compound — a founder who collected three Enthusiasm-Trap inputs in a row becomes more confident, not less. Identify any of the 7 patterns and name the entries that match.
 
 4. **Compute PMF dimensions:**
    - **Sample size adequacy.** How many *targeted* (within-ICP) conversations? Threshold: 20+. Below that, no stage above pre-signal is permitted.
@@ -89,12 +89,12 @@ Read entire `STARTUP-STATE.md` — evidence log is the whole working set, not ju
 
 8. **Freeze decisions when needed.** If post-launch founder hasn't hit Sean Ellis 40%, FREEZE the scaling/paid acquisition recommendation. Force a return to Build-Measure-Learn. Don't soften this — per Vohra and Balfour, paid acquisition before PMF destroys runway and pollutes the signal.
 
-9. **Pre-mortem prompt at full audit** (per `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` structural override). "Assume this fails in 6 months. What's the most likely cause? Now: what evidence would refute that cause? Do we have that evidence?"
+9. **Pre-mortem prompt at full audit** (per `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` structural override). "Assume this fails in 6 months. What's the most likely cause? Now: what evidence would refute that cause? Do we have that evidence?"
 
 10. **Bias sentinel pass.** Especially:
     - **Uncanny valley of PMF:** small marginal traction = neither clear pivot nor clear persevere. Name this state honestly. The temptation is to power through; the bias is the founder filling the data gaps with optimism. Force a return to behavioral testing.
     - **Confirmation bias on cherry-picked signals:** if the founder is anchoring on the 3 best entries while ignoring 17 zero-weight entries, name the cherry-pick.
-    - **Sunk cost:** if the audit is being run because the founder is considering quitting, run the opportunity-cost reframe from `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`.
+    - **Sunk cost:** if the audit is being run because the founder is considering quitting, run the opportunity-cost reframe from `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`.
 
 11. **Update state.** PMF Running Score (all dimensions). Current Decision Point. What We Know vs Assumed for any newly resolved or newly contested facts.
 
@@ -104,7 +104,7 @@ Read entire `STARTUP-STATE.md` — evidence log is the whole working set, not ju
     - PMF measurement readiness (40+ active users) → `pmf-audit` for full Sean Ellis methodology.
     - Pre-signal 3+ months → `pivot-decision`.
     - Decision-making under stress detected → `founder-resilience`.
-    - Token-cost or model-market-fit concerns (AI products) → load `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md`.
+    - Token-cost or model-market-fit concerns (AI products) → load `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md`.
 
 ## Outputs
 
@@ -130,4 +130,4 @@ Per step 12 above. State explicitly which skill and what to do if it ships in a 
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. Sharper at decision gates than at routine updates. The system's job here is to refuse decisions the evidence doesn't support — that's the load-bearing function. When refusing, do it cleanly; explain what evidence would change the answer; do not pad.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. Sharper at decision gates than at routine updates. The system's job here is to refuse decisions the evidence doesn't support — that's the load-bearing function. When refusing, do it cleanly; explain what evidence would change the answer; do not pad.

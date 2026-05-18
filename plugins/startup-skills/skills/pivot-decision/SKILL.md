@@ -40,15 +40,15 @@ The structured decision gate for "continue / adjust / pivot." Reads the full sta
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — sunk cost (most load-bearing here), loss aversion, optimism bias, chronic pivoting.
-- `${CLAUDE_PLUGIN_ROOT}/references/scoring-rubrics.md` — Dalton's 4-criteria rubric for pivot candidates.
-- `${CLAUDE_PLUGIN_ROOT}/references/case-studies.md` — Slack (Glitch → enterprise chat), Brex (VR → corporate cards), Segment (classroom → analytics), Magic (concierge → AI assistants).
-- `${CLAUDE_PLUGIN_ROOT}/references/external-resources.md` — Dalton's *All About Pivoting*, Eric Ries pivot chapter.
-- `${CLAUDE_PLUGIN_ROOT}/references/decision-journal-template.md` — kill criteria, MAP, monkeys-vs-pedestals.
-- `${CLAUDE_PLUGIN_ROOT}/references/founder-resilience-protocols.md` — decision quality under stress.
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` — for AI-product pivots.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — sunk cost (most load-bearing here), loss aversion, optimism bias, chronic pivoting.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/scoring-rubrics.md` — Dalton's 4-criteria rubric for pivot candidates.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/case-studies.md` — Slack (Glitch → enterprise chat), Brex (VR → corporate cards), Segment (classroom → analytics), Magic (concierge → AI assistants).
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/external-resources.md` — Dalton's *All About Pivoting*, Eric Ries pivot chapter.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/decision-journal-template.md` — kill criteria, MAP, monkeys-vs-pedestals.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/founder-resilience-protocols.md` — decision quality under stress.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` — for AI-product pivots.
 
 ## State Document Protocol
 
@@ -74,7 +74,7 @@ Read entire `STARTUP-STATE.md` — every section, not just recent updates. Updat
 4. **Run Klein's Pre-Mortem.** Verbatim or close: *"Imagine it's 12 months from now. The startup has catastrophically failed. Write the autopsy. What were the warning signs we ignored? What did we keep doing despite the data?"*
    - The pre-mortem unlocks risk acknowledgment that direct questioning won't. Founders defend present decisions; they critique past decisions freely.
 
-5. **Apply bias sentinel AGGRESSIVELY** per `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`:
+5. **Apply bias sentinel AGGRESSIVELY** per `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`:
    - **Sunk cost — most load-bearing here.** "You've put N months in. That's done. The only question is forward expected value, not past investment."
    - **Annie Duke's "would you start this today?"** "If you were starting today, knowing what you know, would you start this?" If no, that's a kill signal that silences sunk-cost reasoning.
    - **Monkeys vs. pedestals** (Annie Duke). Have you been testing the monkey (will customers pay?) or building pedestals (logo, deck, advisor relationships)? If pedestal-heavy: that's the diagnostic.
@@ -98,7 +98,7 @@ Read entire `STARTUP-STATE.md` — every section, not just recent updates. Updat
 
    Refuse pivots into spaces where the founder has no edge, no relationship, no insight. That's flight, not pivot.
 
-   Score each against `${CLAUDE_PLUGIN_ROOT}/references/scoring-rubrics.md` Dalton 4-criteria:
+   Score each against `${CLAUDE_PLUGIN_ROOT}/references/composed/scoring-rubrics.md` Dalton 4-criteria:
    - Market size (1-10).
    - Founder-market fit (1-10).
    - Ease of getting started (1-10).
@@ -106,7 +106,7 @@ Read entire `STARTUP-STATE.md` — every section, not just recent updates. Updat
 
    Identify the candidate that is BOTH **higher quality AND easier to start** than the current direction (Dalton's two-condition test).
 
-8. **Reference real pivots from `${CLAUDE_PLUGIN_ROOT}/references/case-studies.md`.** "Brex pivoted from VR to corporate cards because the founders had FMF in fintech, not in VR. The pivot worked because they pivoted *to* where they had earned credibility — not away from a hard problem."
+8. **Reference real pivots from `${CLAUDE_PLUGIN_ROOT}/references/composed/case-studies.md`.** "Brex pivoted from VR to corporate cards because the founders had FMF in fintech, not in VR. The pivot worked because they pivoted *to* where they had earned credibility — not away from a hard problem."
 
 9. **Update state.**
    - Current Decision Point: continue / adjust / pivot.
@@ -144,4 +144,4 @@ Per step 10.
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. The sharpest moment in the system. Founders bring their hardest emotions to this conversation. Empathy on the difficulty; rigor on the decision. Refuse to soften when the data is clear. Use Dalton's direct framings ("you can only work on one thing at a time").
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. The sharpest moment in the system. Founders bring their hardest emotions to this conversation. Empathy on the difficulty; rigor on the decision. Refuse to soften when the data is clear. Use Dalton's direct framings ("you can only work on one thing at a time").

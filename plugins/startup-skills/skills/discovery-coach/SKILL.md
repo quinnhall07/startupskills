@@ -40,16 +40,16 @@ If the user has not yet identified a hypothesis or ICP, route them to `problem-f
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — especially confirmation bias and polite customer.
-- `${CLAUDE_PLUGIN_ROOT}/references/mom-test-principles.md` — the question-design rules.
-- `${CLAUDE_PLUGIN_ROOT}/references/evidence-weighting-matrix.md` — for DEBRIEF classification.
-- `${CLAUDE_PLUGIN_ROOT}/references/false-signal-detection.md` — the 7 patterns.
-- `${CLAUDE_PLUGIN_ROOT}/references/email-templates.md` — for outreach to set up interviews.
-- `${CLAUDE_PLUGIN_ROOT}/references/external-resources.md` — Fitzpatrick, Friedman, Dinnr.
-- `${CLAUDE_PLUGIN_ROOT}/references/continuous-discovery-patterns.md` — Torres story-based interviewing, OST.
-- `${CLAUDE_PLUGIN_ROOT}/references/jtbd-protocols.md` — Switch Interview mode.
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — especially confirmation bias and polite customer.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/mom-test-principles.md` — the question-design rules.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/evidence-weighting-matrix.md` — for DEBRIEF classification.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/false-signal-detection.md` — the 7 patterns.
+- `${CLAUDE_PLUGIN_ROOT}/references/templates/email-templates.md` — for outreach to set up interviews.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/external-resources.md` — Fitzpatrick, Friedman, Dinnr.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/continuous-discovery-patterns.md` — Torres story-based interviewing, OST.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/jtbd-protocols.md` — Switch Interview mode.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`
 
 ## State Document Protocol
 
@@ -63,10 +63,10 @@ Ask the user to confirm mode if it's ambiguous. PREPARE runs when the founder ha
 
 1. **Read hypothesis and ICP.** If either is vague, stop and route to `problem-focus`.
 
-2. **Generate a custom 10-15 question interview script** built from `${CLAUDE_PLUGIN_ROOT}/references/mom-test-principles.md`. Explicit structure:
+2. **Generate a custom 10-15 question interview script** built from `${CLAUDE_PLUGIN_ROOT}/references/composed/mom-test-principles.md`. Explicit structure:
    - (1) Warm-up (1-2 Q): rapport, context-setting.
    - (2) Context mapping (2-3 Q): "Tell me about your role, your team, your workflow."
-   - (3) Workflow walkthrough (4-6 Q): "Walk me through the last time you [did the behavior]." (Torres story-based form, per `${CLAUDE_PLUGIN_ROOT}/references/continuous-discovery-patterns.md`)
+   - (3) Workflow walkthrough (4-6 Q): "Walk me through the last time you [did the behavior]." (Torres story-based form, per `${CLAUDE_PLUGIN_ROOT}/references/composed/continuous-discovery-patterns.md`)
    - (4) Severity / time-cost (2-3 Q): "How long does this take?" "What does it cost?"
    - (5) Commitment ask (1-2 Q): behavioral commitment, NEVER hypothetical.
 
@@ -74,9 +74,9 @@ Ask the user to confirm mode if it's ambiguous. PREPARE runs when the founder ha
    - ALWAYS include some of: "Tell me about the last time you did X." "What did that cost you?" "How are you solving this today?" "Who else is involved?" "Walk me through your workflow yesterday."
    - The script NEVER pitches the idea. Pitching contaminates discovery.
 
-   **Switch Interview variant**: if the user has recently purchased something in the space (themselves or interviewing a customer who switched), use the 10-phase Switch Interview from `${CLAUDE_PLUGIN_ROOT}/references/jtbd-protocols.md` instead. Switch interviews work post-purchase; Mom Test works pre-purchase.
+   **Switch Interview variant**: if the user has recently purchased something in the space (themselves or interviewing a customer who switched), use the 10-phase Switch Interview from `${CLAUDE_PLUGIN_ROOT}/references/composed/jtbd-protocols.md` instead. Switch interviews work post-purchase; Mom Test works pre-purchase.
 
-3. **Outreach to set up the interview.** From `${CLAUDE_PLUGIN_ROOT}/references/email-templates.md`, draft 1–3 outreach messages (warm and cold variants) targeting the ICP. Customize the credibility line and value-prop sentence to the specific recipient.
+3. **Outreach to set up the interview.** From `${CLAUDE_PLUGIN_ROOT}/references/templates/email-templates.md`, draft 1–3 outreach messages (warm and cold variants) targeting the ICP. Customize the credibility line and value-prop sentence to the specific recipient.
 
 4. **Identify 3 likely bad questions the founder will ask.** Based on the hypothesis, predict the founder's most-natural-but-wrong questions (almost always hypothetical or feature-focused). Name each, explain why it fails, and give the replacement.
 
@@ -92,7 +92,7 @@ Run immediately after every customer conversation, before the founder's memory d
 
 1. **Dump first.** Ask: "Dump everything you remember from the conversation. Don't synthesize yet — just facts and quotes. Verbatim where possible." Wait. Resist the urge to ask synthesizing questions.
 
-2. **Classify every substantive statement against `${CLAUDE_PLUGIN_ROOT}/references/evidence-weighting-matrix.md`.** Per statement: category, weight (0.0–1.0), one-line reasoning. Example:
+2. **Classify every substantive statement against `${CLAUDE_PLUGIN_ROOT}/references/composed/evidence-weighting-matrix.md`.** Per statement: category, weight (0.0–1.0), one-line reasoning. Example:
    - "Sounds cool, I'd use it." → 0.0 / politeness response.
    - "I'd pay $20/month." → 0.0 / hypothetical pricing.
    - "You should add feature Y." → 0.1 / wishlist; note Y as a clue but not as a roadmap input.
@@ -100,7 +100,7 @@ Run immediately after every customer conversation, before the founder's memory d
    - "Here, let me show you our internal spreadsheet." → 0.8 / workflow displacement.
    - "Can I pay you $500 to do this manually next week?" → 1.0 / behavioral absolute.
 
-3. **Apply `${CLAUDE_PLUGIN_ROOT}/references/false-signal-detection.md`.** Run all 7 patterns over the new entries AND the existing log. Especially: Enthusiasm Trap, Network Halo, Polite Customer, Feature Request Mirage. If any fire, name the pattern and the offending entries.
+3. **Apply `${CLAUDE_PLUGIN_ROOT}/references/composed/false-signal-detection.md`.** Run all 7 patterns over the new entries AND the existing log. Especially: Enthusiasm Trap, Network Halo, Polite Customer, Feature Request Mirage. If any fire, name the pattern and the offending entries.
 
 4. **Test for the Dinnr false-positive trap.** Did the founder explicitly ask for behavioral commitment in the meeting? (Money, time, intro, follow-up demo slot, payment intent.)
 
@@ -113,7 +113,7 @@ Run immediately after every customer conversation, before the founder's memory d
 
 7. **Refine the hypothesis.** Using Lean Startup pivot/persevere logic: did the conversation confirm, refute, or surprise? If surprise, was the surprise about the customer (modify ICP), the problem (modify hypothesis), or the solution (modify offer)?
 
-8. **Bias sentinel pass per `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`.** Almost always: confirmation bias (founder minimizing negative quotes), polite customer (founder overweighting positive quotes). Name them.
+8. **Bias sentinel pass per `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`.** Almost always: confirmation bias (founder minimizing negative quotes), polite customer (founder overweighting positive quotes). Name them.
 
 9. **Recommend next.**
    - If N (targeted ICP conversations) < 20: more interviews. Generate the next 5 prospect names via `outreach-engine`. Re-run PREPARE for the next batch, framing the next-riskiest-assumption explicitly: "Last batch tested X. Next batch tests Y (e.g., buyer-vs-user, payment willingness, trigger frequency)."
@@ -147,4 +147,4 @@ Per Mode 2 step 9. State the next step explicitly: "Type `/skill <name>` to cont
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. In PREPARE: senior partner coaching, brisk. In DEBRIEF: forensic. The founder will lobby for higher weights — refuse politely but firmly. Diplomatic dishonesty here costs the founder months.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. In PREPARE: senior partner coaching, brisk. In DEBRIEF: forensic. The founder will lobby for higher weights — refuse politely but firmly. Diplomatic dishonesty here costs the founder months.

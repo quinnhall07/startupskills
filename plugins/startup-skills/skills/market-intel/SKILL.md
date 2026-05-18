@@ -24,13 +24,13 @@ Independent web research as a structured brief — pain expressed, exact custome
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/research-playbook.md` — query templates and source trust ladder.
-- `${CLAUDE_PLUGIN_ROOT}/references/tar-pit-detection.md` — to run the tar-pit check on any idea-space topic.
-- `${CLAUDE_PLUGIN_ROOT}/references/case-studies.md` — to surface real-company anchors when relevant.
-- `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` — for AI-product topics.
-- `${CLAUDE_PLUGIN_ROOT}/references/distribution-by-archetype.md` — when researching a GTM motion.
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/research-playbook.md` — query templates and source trust ladder.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/tar-pit-detection.md` — to run the tar-pit check on any idea-space topic.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/case-studies.md` — to surface real-company anchors when relevant.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` — for AI-product topics.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/distribution-by-archetype.md` — when researching a GTM motion.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`
 
 ## State Document Protocol
 
@@ -44,7 +44,7 @@ Read `STARTUP-STATE.md` to know the founder's archetype and current focus. Updat
 
    **Staleness check (schema v2):** Read `STARTUP-STATE.md` Research Cache. If this topic was researched <30 days ago by any skill, cite the cached brief location and return. Skip fresh searches unless the founder explicitly requests a refresh.
 
-2. **Construct 5–10 queries** across the seven categories in `${CLAUDE_PLUGIN_ROOT}/references/research-playbook.md`. Required coverage: at least one query per category from forum pain, review complaints, job posting analysis, failed-startup retrospectives, and community language mapping. Additional queries fill out funding activity and adjacent communities when relevant.
+2. **Construct 5–10 queries** across the seven categories in `${CLAUDE_PLUGIN_ROOT}/references/composed/research-playbook.md`. Required coverage: at least one query per category from forum pain, review complaints, job posting analysis, failed-startup retrospectives, and community language mapping. Additional queries fill out funding activity and adjacent communities when relevant.
 
 3. **Execute searches.** Use parallel `WebSearch` where possible. Then pick the 2–3 highest-signal results (high-engagement Reddit threads, specific G2/Capterra reviews, substantive post-mortems) and `WebFetch` them for substance — do not rely on snippets.
 
@@ -55,7 +55,7 @@ Read `STARTUP-STATE.md` to know the founder's archetype and current focus. Updat
    - **What's missing.** Gaps in existing solutions, drawn directly from negative reviews and failed-startup post-mortems.
    - **Why-now.** Any recent change — regulation, technology, market shift, demographic — that opens this. If none found, say so explicitly. "No discoverable why-now" is a signal in itself.
    - **Failed attempts.** Post-mortems found, with structural reasons. If three or more failed for the same reason, escalate to **tar-pit warning**.
-   - **Tar-pit check.** Cross-reference against `${CLAUDE_PLUGIN_ROOT}/references/tar-pit-detection.md`. If the topic matches a known tar pit pattern, name it and explain why.
+   - **Tar-pit check.** Cross-reference against `${CLAUDE_PLUGIN_ROOT}/references/composed/tar-pit-detection.md`. If the topic matches a known tar pit pattern, name it and explain why.
 
 5. **Refuse TAM-as-validation.** If during research you encounter top-down TAM figures ("the global X market is $XB"), do not include them in the brief. State explicitly: "TAM excluded — this brief assesses whether 50 specific desperate users exist, not theoretical market size. Why-now and demand signals come first."
 
@@ -86,4 +86,4 @@ Read `STARTUP-STATE.md` to know the founder's archetype and current focus. Updat
 
 ## Tone
 
-Brisk. No editorializing inside the brief — let the verbatim quotes speak. Editorial happens in the calling skill's response, not here. Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`.
+Brisk. No editorializing inside the brief — let the verbatim quotes speak. Editorial happens in the calling skill's response, not here. Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`.

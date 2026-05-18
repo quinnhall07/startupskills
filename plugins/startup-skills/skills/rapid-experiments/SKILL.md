@@ -33,15 +33,15 @@ Designs behavioral validation experiments matched to the founder's archetype. Re
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — perfectionism-as-procrastination, fake-launch syndrome, HARKing.
-- `${CLAUDE_PLUGIN_ROOT}/references/validation-techniques.md` — the technique matrix by archetype.
-- `${CLAUDE_PLUGIN_ROOT}/references/landing-page-patterns.md` — for Fake Door / signup page design.
-- `${CLAUDE_PLUGIN_ROOT}/references/evidence-weighting-matrix.md` — to specify expected signal weight before deployment.
-- `${CLAUDE_PLUGIN_ROOT}/references/case-studies.md` — Stripe Collison installation, DoorDash manual delivery, Dropbox video.
-- `${CLAUDE_PLUGIN_ROOT}/references/external-resources.md` — Eric Ries, PG *Do Things That Don't Scale*, Michael Seibel.
-- `${CLAUDE_PLUGIN_ROOT}/references/ai-era-anti-patterns.md` — synthetic-user ban, vibe-vs-craft, wrapper trap.
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — perfectionism-as-procrastination, fake-launch syndrome, HARKing.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/validation-techniques.md` — the technique matrix by archetype.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/landing-page-patterns.md` — for Fake Door / signup page design.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/evidence-weighting-matrix.md` — to specify expected signal weight before deployment.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/case-studies.md` — Stripe Collison installation, DoorDash manual delivery, Dropbox video.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/external-resources.md` — Eric Ries, PG *Do Things That Don't Scale*, Michael Seibel.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/ai-era-anti-patterns.md` — synthetic-user ban, vibe-vs-craft, wrapper trap.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`
 
 ## State Document Protocol
 
@@ -53,7 +53,7 @@ Read `STARTUP-STATE.md`; pull hypothesis, riskiest assumption, ICP, business arc
 
 2. **Identify the riskiest assumption that blocks progress.** From `problem-focus` if it ran, otherwise extract from the current hypothesis. The experiment must test this *one specific* assumption. If the founder wants to test five things, refuse — design one test for the most-blocking one.
 
-3. **Apply archetype guardrails** from `${CLAUDE_PLUGIN_ROOT}/references/validation-techniques.md`:
+3. **Apply archetype guardrails** from `${CLAUDE_PLUGIN_ROOT}/references/composed/validation-techniques.md`:
    - **B2B enterprise (Fortune 500, regulated):** Fake Door tests damage trust. The skill REFUSES to design one. Rationale: enterprise decision-makers assume you can't execute what you're claiming; when they discover the product doesn't exist after committing budget, the trust damage is irreversible. Use **Concierge MVP framed as "high-touch pilot" or "white-glove onboarding"** instead.
    - **B2B SMB / devtools:** Either Fake Door or Concierge. Fake Door acceptable if framed as "early access."
    - **Consumer SaaS / mobile:** Aggressive Fake Door / Wizard of Oz deployment.
@@ -65,7 +65,7 @@ Read `STARTUP-STATE.md`; pull hypothesis, riskiest assumption, ICP, business arc
    - **Type** (per archetype guardrails in step 3).
    - **What it tests** — the riskiest assumption, named explicitly.
    - **Time to deploy** — target 1-7 days.
-   - **Signal quality** — expected weight per `${CLAUDE_PLUGIN_ROOT}/references/evidence-weighting-matrix.md` (with source-quality + deposit-size modifiers per `${CLAUDE_PLUGIN_ROOT}/references/validation-techniques.md`).
+   - **Signal quality** — expected weight per `${CLAUDE_PLUGIN_ROOT}/references/composed/evidence-weighting-matrix.md` (with source-quality + deposit-size modifiers per `${CLAUDE_PLUGIN_ROOT}/references/composed/validation-techniques.md`).
    - **Cost** — dollars and founder hours.
 
 5. **Pre-commit success criterion.** "The experiment succeeds if X people do Y by date Z." Specific numbers. Examples:
@@ -76,14 +76,14 @@ Read `STARTUP-STATE.md`; pull hypothesis, riskiest assumption, ICP, business arc
 6. **Pre-commit kill criterion.** "We will kill or pivot if X people do not do Y by date Z." Symmetric to success. Both go into `STARTUP-STATE.md` BEFORE deployment.
 
 7. **Build the artifact on request only.** Offer once: "I can build the [page / outreach batch / Concierge offer] for you. Say the word." Examples:
-   - **Fake Door page:** generate HTML/React per `${CLAUDE_PLUGIN_ROOT}/references/landing-page-patterns.md`. Single CTA. Email + intent capture.
+   - **Fake Door page:** generate HTML/React per `${CLAUDE_PLUGIN_ROOT}/references/composed/landing-page-patterns.md`. Single CTA. Email + intent capture.
    - **Wizard of Oz frontend:** a realistic-looking UI; specify which backend operations the founder will manually perform.
    - **Concierge offer:** templated outreach message offering manual delivery with a specific price.
    - **Pre-order page:** landing page with Stripe payment intent capture and refund terms.
 
 8. **Specify the interpretation plan BEFORE deployment.** What does success look like in quantitative terms? What does failure look like? Document it now — this prevents HARKing (Hypothesizing After Results are Known), where the founder rationalizes the outcome.
 
-9. **Three named bias checkpoints** (per `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`):
+9. **Three named bias checkpoints** (per `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`):
 
    **(a) Perfectionism check.** "Will you ship this rough, or are you about to polish for two weeks? The point is signal, not aesthetics." Refuse polish. Ship rough.
 
@@ -122,4 +122,4 @@ Read `STARTUP-STATE.md`; pull hypothesis, riskiest assumption, ICP, business arc
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`. Direct on refusals (B2B-enterprise Fake Door, perfectionism, five-things-at-once). The kill criterion is the load-bearing artifact; insist on it.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`. Direct on refusals (B2B-enterprise Fake Door, perfectionism, five-things-at-once). The kill criterion is the load-bearing artifact; insist on it.

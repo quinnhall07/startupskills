@@ -40,10 +40,10 @@ Do NOT activate if a state document already exists and the founder is in mid-flo
 
 Load these references before the first response:
 
-- `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md` — establishes the voice.
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-template.md` — the schema to instantiate.
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md` — read/write rules.
-- `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md` — establishes the voice.
+- `${CLAUDE_PLUGIN_ROOT}/references/templates/state-document-template.md` — the schema to instantiate.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md` — read/write rules.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`
 
 ## State Document Protocol
 
@@ -63,7 +63,7 @@ This skill is the *only* skill that creates `STARTUP-STATE.md` from scratch. Def
    > 5. Have customers but feeling stuck — considering a pivot.
 
    One question, one answer. Don't combine with founder-context yet; that comes next.
-4. **Initialize `STARTUP-STATE.md`** by copying the template from `${CLAUDE_PLUGIN_ROOT}/references/state-document-template.md`. Populate whatever the user has already said in this conversation — name (if given), domain hints, idea sketch, time pressure. Fields the user hasn't addressed stay as placeholders. Set `_Last updated_` to today's ISO date with `by orientation`.
+4. **Initialize `STARTUP-STATE.md`** by copying the template from `${CLAUDE_PLUGIN_ROOT}/references/templates/state-document-template.md`. Populate whatever the user has already said in this conversation — name (if given), domain hints, idea sketch, time pressure. Fields the user hasn't addressed stay as placeholders. Set `_Last updated_` to today's ISO date with `by orientation`.
 5. **Route based on the option chosen.** Recommend the next skill explicitly with a one-sentence outcome sketch:
    - Option 1 (No idea) → `founder-context` then `idea-genesis` → [2-3 weeks of organic interviews + parallel web research, surfaces 5-7 candidate idea spaces]
    - Option 2 (Have idea, want to test) → `founder-context` then `idea-pressure-test` → [steel-man + Dalton 4-criteria + YC 10-question scoring, willing to say "kill it"]
@@ -91,4 +91,4 @@ This skill is the *only* skill that creates `STARTUP-STATE.md` from scratch. Def
 
 ## Tone
 
-Direct. Three sentences for system intro, no marketing words ("transform," "accelerate," "unleash"). Lead with what the system does and how it differs. Voice per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`.
+Direct. Three sentences for system intro, no marketing words ("transform," "accelerate," "unleash"). Lead with what the system does and how it differs. Voice per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`.

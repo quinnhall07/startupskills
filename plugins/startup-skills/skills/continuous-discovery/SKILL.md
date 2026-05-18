@@ -29,14 +29,14 @@ If any unchecked: STOP. Either route to the correct skill, or ask the founder to
 
 ## Required Reading
 
-- `${CLAUDE_PLUGIN_ROOT}/references/state-document-protocol.md`
-- `${CLAUDE_PLUGIN_ROOT}/references/continuous-discovery-patterns.md` — Torres OST, story-based interviewing, 5 assumption categories, the Product Trio.
-- `${CLAUDE_PLUGIN_ROOT}/references/mom-test-principles.md` — interview hygiene; applies forever, not just pre-validation.
-- `${CLAUDE_PLUGIN_ROOT}/references/evidence-weighting-matrix.md` — for classifying new interview data against the existing log.
-- `${CLAUDE_PLUGIN_ROOT}/references/jtbd-protocols.md` — Switch interview for post-purchase analysis and churn understanding.
-- `${CLAUDE_PLUGIN_ROOT}/references/retention-metrics.md` — to tie discovery findings to retention diagnostics.
-- `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md` — independence-check failure, pedestal bias, recency bias.
-- `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/state-document-protocol.md`
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/continuous-discovery-patterns.md` — Torres OST, story-based interviewing, 5 assumption categories, the Product Trio.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/mom-test-principles.md` — interview hygiene; applies forever, not just pre-validation.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/evidence-weighting-matrix.md` — for classifying new interview data against the existing log.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/jtbd-protocols.md` — Switch interview for post-purchase analysis and churn understanding.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/retention-metrics.md` — to tie discovery findings to retention diagnostics.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md` — independence-check failure, pedestal bias, recency bias.
+- `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md`
 
 ## State Document Protocol
 
@@ -69,7 +69,7 @@ Read `STARTUP-STATE.md` at activation. This skill maintains TWO sections: the Op
 
 9. **PMF Treadmill check** (per `retention-metrics.md` and `continuous-discovery-patterns.md`). If any opportunity is "what AI/competitor X already does," surface the treadmill question: "Is your core JTBD now achievable in ChatGPT/Claude in <30 seconds? If yes, your moat is eroding. Discovery should focus on workflow-embedding opportunities, not feature-parity ones." Name the drift before it ossifies.
 
-10. **Bias sentinel pass** per `${CLAUDE_PLUGIN_ROOT}/references/bias-sentinel.md`. Especially:
+10. **Bias sentinel pass** per `${CLAUDE_PLUGIN_ROOT}/references/composed/bias-sentinel.md`. Especially:
     - **Independence-check failure.** Founder treats one customer's feature request as a roadmap mandate. Name it.
     - **Pedestal bias** (Annie Duke). Founder runs interviews but doesn't ship the assumption test. Talking != learning. Pin the next experiment with a date.
     - **Recency bias.** Last week's three interviews should not outweigh the prior 20. Weight by cohort, not by recency.
@@ -107,4 +107,4 @@ Per Step 12. `rapid-experiments` for assumption tests; `signal-audit` for retent
 
 ## Tone
 
-Per `${CLAUDE_PLUGIN_ROOT}/references/tone-and-stance.md` and `${CLAUDE_PLUGIN_ROOT}/references/aggressive-consultation-archetype.md`. Direct on cadence enforcement. The skill's value IS friction — refuse "we're too busy to interview this week" without naming the cost (PMF Treadmill drift, cohort opacity, roadmap-by-loudest-customer). Empathy on the workload; rigor on the discipline. Cadence is non-negotiable.
+Per `${CLAUDE_PLUGIN_ROOT}/references/composed/tone-and-stance.md` and `${CLAUDE_PLUGIN_ROOT}/references/composed/aggressive-consultation-archetype.md`. Direct on cadence enforcement. The skill's value IS friction — refuse "we're too busy to interview this week" without naming the cost (PMF Treadmill drift, cohort opacity, roadmap-by-loudest-customer). Empathy on the workload; rigor on the discipline. Cadence is non-negotiable.

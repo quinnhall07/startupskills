@@ -13,7 +13,7 @@
 
 # Startup Skills
 
-A Claude Code plugin that turns Claude into an Aggressive Epistemic Auditor for founders. Idea to PMF, with Y Combinator methodology, the Mom Test, the Lean Startup, and behavioral economics applied as structural overrides.
+A Claude Code plugin that turns Claude into a thinking partner for founders. Idea to PMF, with Y Combinator methodology, the Mom Test, the Lean Startup, and behavioral economics applied as structural checks on weak evidence.
 
 **Status:** v0.5 — 21 skills, 33 references. Methodology refreshed to 2026 canon (Torres / Moesta / Dunford / Duke / Tetlock / Balfour / Ramanujam / Andrew Chen). AI-era playbook integrated. Every skill carries TRIGGER/SKIP routing blocks; decision-gate skills carry HARD-GATE refusal blocks.
 
@@ -23,13 +23,13 @@ A Claude Code plugin that turns Claude into an Aggressive Epistemic Auditor for 
 
 Startup Skills compresses the time between "I have an idea (or no idea)" and "I know whether this is real." It keeps compressing it through customer discovery, MVP design, first customers, and product-market fit measurement. The system is distributed as a GitHub repository structured as a Claude Code plugin; users install with two commands and get a thinking partner who actively scours Reddit, G2, Crunchbase, and job postings while they're talking.
 
-The tone is direct and willing to wound. The system will flatly tell a founder their idea is a tar pit, refuse to weight polite-customer signal, and halt building until behavioral demand is validated. It does this because diplomatic dishonesty causes six-month detours, and most founders fail not from bad execution but from cognitive delusion under pressure. Awareness of bias does not cure bias. The system installs the structural overrides — evidence weighting, pre-mortems, falsification pre-commitments — that bias-awareness alone cannot.
+The tone is direct and grounded in evidence. The system will tell a founder their idea fits a tar pit pattern, won't weight polite-customer signal as real data, and pushes back hard when a founder wants to build before behavioral demand is validated — and it always pairs the pushback with the next concrete move, because pushback without a path forward is just discouragement. It's firm because hedging on weak evidence usually costs founders months, and most early-stage failures come from cognitive bias under pressure, not bad execution. Awareness of bias does not cure bias. The system installs the structural checks — evidence weighting, pre-mortems, falsification pre-commitments — that bias-awareness alone cannot.
 
 21 skills total, plus a shared reference library of 33 documents. Each skill is small, opinionated, and oriented toward a specific failure mode that destroys early-stage startups.
 
 ## The Thesis
 
-> The most expensive mistake in startups is building something nobody wants. The second most expensive is discovering this after six months instead of six days. Startup Skills compresses that distance — combining the founder's domain intuition and judgment with Claude's ability to research at scale, identify cognitive bias in real time, build validation artifacts in minutes, and pattern-match across thousands of startup stories. The human does what only humans can: have lived expertise, build relationships, make sales calls, commit. Claude does what only Claude can: read the entire internet, never tire of pushing back, structurally enforce evidence over opinion. The system is not a coach in the soft sense. It is an Aggressive Epistemic Auditor whose job is to keep the founder from lying to themselves long enough to find out what's true.
+> The most expensive mistake in startups is building something nobody wants. The second most expensive is discovering this after six months instead of six days. Startup Skills compresses that distance — combining the founder's domain intuition and judgment with Claude's ability to research at scale, identify cognitive bias in real time, build validation artifacts in minutes, and pattern-match across thousands of startup stories. The human does what only humans can: have lived expertise, build relationships, make sales calls, commit. Claude does what only Claude can: read the entire internet, never tire of pushing back, structurally enforce evidence over opinion. The system is not a coach in the soft sense. It is a thinking partner whose job is to keep the founder honest about what the evidence actually says — long enough to find out what's true.
 
 ## Who Is This For?
 
