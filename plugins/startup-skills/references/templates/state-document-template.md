@@ -9,7 +9,7 @@ When `orientation` initializes the file, it copies the template below and popula
 ```markdown
 # Startup State — [Name or "Unnamed"] — [Date initialized]
 _Last updated: [ISO date] by [skill name]_
-_Schema version: 1.0_
+_Schema version: 1.1_
 
 ## Founder Profile
 - Name (optional):
@@ -103,6 +103,28 @@ _Schema version: 1.0_
 
 ## Next Action — Claude (parallel)
 -
+
+## Inferred Stage
+
+(Auto-derived hint. Written by skills as they complete; read by orientation
+to filter candidate skills. Complements — does not replace — `## Current
+Decision Point`, which is human-curated. One of: idea-genesis,
+problem-validation, discovery, mvp-scoping, first-customers,
+pmf-measurement, at-pmf-threshold, ready-to-scale, growth, scaling,
+fundraising-prep, pivot-evaluation.)
+
+Current: [unset until first skill writes]
+History:
+- [date] [skill] — set to [stage] because [reason]
+
+## Session Pointers
+
+(Forward-looking nudges written by skills when they finish. Orientation
+reads these first when selecting the next skill. Keep the 5 most recent:
+append when adding a new pointer, and delete the oldest when more than 5
+exist.)
+
+- (none yet)
 
 ## Session Log
 - [date] [skill] — [one-sentence summary, decisions made, evidence added]
