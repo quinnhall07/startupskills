@@ -4,13 +4,13 @@
     "name": "quinnhall07"
   },
   "metadata": {
-    "description": "An Aggressive Epistemic Auditor for founders. Idea to PMF, with Y Combinator methodology, the Mom Test, the Lean Startup, and behavioral economics applied as structural overrides."
+    "description": "A thinking partner for founders. Idea to PMF, with Y Combinator methodology, the Mom Test, the Lean Startup, and behavioral economics applied as structural checks on weak evidence."
   },
   "plugins": [
     {
       "name": "startup-skills",
       "source": "./plugins/startup-skills",
-      "description": "Complete Aggressive Epistemic Auditor for founders: 16 skills from idea to PMF."
+      "description": "A complete thinking partner for founders: 16 skills from idea to PMF."
     }
   ]
 }
