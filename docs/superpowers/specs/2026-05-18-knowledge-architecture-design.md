@@ -74,8 +74,9 @@ Stage names referenced in skill frontmatter and STARTUP-STATE.md must come from 
 - `scaling` — scaling org and operations
 - `fundraising-prep` — preparing to raise
 - `pivot-evaluation` — considering whether/how to pivot
+- `any` — reserved sentinel for stage-agnostic system skills (currently only used by `_meta/` skills like `orientation` and `knowledge-pipeline`)
 
-Skills may list multiple stages. STARTUP-STATE.md's `# Inferred Stage` resolves to exactly one at any time.
+Skills may list multiple stages. STARTUP-STATE.md's `# Inferred Stage` resolves to exactly one at any time (never `any`). AUDIT mode of the knowledge-pipeline skill treats `any` as a valid value only when the skill lives under `skills/_meta/`; flags it as a graph defect anywhere else.
 
 ### Kernel anatomy
 
@@ -115,9 +116,11 @@ you might as well go all the way. $69 is "much more than $50, looking for $49."
 
 **Conflict with [[price-as-quality-signal-band]]:** Charm pricing maximizes
 volume at known low-end positioning. Price-as-quality-signal says underpricing
-destroys perceived value. Resolution: charm pricing is correct *within* a
-mass-market band; if the product's positioning is premium, the framework
-changes entirely. Pick the band first.
+destroys perceived value.
+
+Resolution: charm pricing is correct *within* a mass-market band; if the
+product's positioning is premium, the framework changes entirely. Pick the
+band first.
 ```
 
 **Frontmatter field rationale:**
@@ -128,7 +131,9 @@ changes entirely. Pick the band first.
 - `status` / `superseded-by:` — kernels are never deleted; deprecate and forward.
 - `distilled:` — flags canonical-distilled kernels for potential future supersession when raw source becomes available.
 
-**Body convention:** always starts with `**The claim:**` so composers can quote it reliably.
+**Body conventions:**
+- Always starts with `**The claim:**` so composers can quote it reliably.
+- When `conflicts-with:` is populated, the body must include a paragraph containing the keyword `Resolution:` that explains which band/context each conflicting kernel applies in. This is grep-checked by AUDIT mode; the keyword itself is what AUDIT looks for.
 
 ### Sources index
 
